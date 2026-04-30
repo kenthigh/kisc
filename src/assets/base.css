@@ -1,7 +1,9 @@
 /* color palette from <https://github.com/vuejs/theme> */
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Questrial&display=swap');
 :root {
+  --main-color: #dd7f3e;
+
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;

@@ -81,7 +81,8 @@ defineOptions({
 
 .eyebrow {
   margin: 0 0 12px;
-  color: #7aa2ff;
+  // color: #7aa2ff;
+  color: var(--main-color);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.08em;

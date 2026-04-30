@@ -72,7 +72,8 @@ const steps = [
 
 .eyebrow {
   margin: 0 0 14px;
-  color: #2d4d98;
+  // color: #2d4d98;
+  color: var(--main-color);
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;

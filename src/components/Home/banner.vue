@@ -10,10 +10,12 @@ const bgOffsetX = ref(0)
 
 const menuItems = [
   { label: 'Home', href: '#home' },
+  { label: 'Why KISC', href: '#why' },
+  { label: 'What We Offer', href: '#offer' },
   { label: 'Our Work', href: '#work' },
   { label: 'How We Work', href: '#how' },
   { label: 'About', href: '#about' },
-  { label: 'Schools', href: '#offer' },
+  { label: 'Schools', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -40,7 +42,7 @@ onUnmounted(() => {
 <template>
   <section class="banner">
     <header class="banner-header">
-      <a class="logo" href="#home" aria-label="KISC 首页"> KISC </a>
+      <a class="logo" href="#home" aria-label="KISC 首页">KISC</a>
 
       <button
         class="menu-toggle"
@@ -52,13 +54,7 @@ onUnmounted(() => {
       </button>
 
       <nav class="menu" :class="{ open: menuOpen }" aria-label="主导航">
-        <a
-          v-for="item in menuItems"
-          :key="item.label"
-          class="menu-item"
-          :href="item.href"
-          @click="menuOpen = false"
-        >
+        <a v-for="item in menuItems" :key="item.label" class="menu-item" :href="item.href">
           {{ item.label }}
         </a>
       </nav>
@@ -66,20 +62,22 @@ onUnmounted(() => {
 
     <div class="banner-content">
       <h1 class="banner-content-title" data-aos="fade-right" data-aos-delay="10">KISC</h1>
-      <h1 class="big-word" data-aos="fade-right" data-aos-delay="30">
+      <h1 class="sub-title" data-aos="fade-right" data-aos-delay="30">
         International School Collaboration
       </h1>
-      <h3 data-aos="fade-right" data-aos-delay="60">
-        A trusted bridge between UK independent schools and Asia
-      </h3>
-      <p data-aos="fade-right" data-aos-delay="100">
-        We support schools in developing meaningful, well-aligned and sustainable engagement with
-        international partners, particularly in China.
-      </p>
+      <div class="sub-content-box">
+        <h3 class="slogan" data-aos="fade-right" data-aos-delay="60">
+          A trusted bridge between UK independent schools and Asia
+        </h3>
+        <p data-aos="fade-right" data-aos-delay="100">
+          We support schools in developing meaningful, well-aligned and sustainable engagement with
+          international partners, particularly in China.
+        </p>
+      </div>
     </div>
 
     <img
-      src="@/assets/residential-building-facades-rotterdam-netherlands.jpg"
+      src="@/assets/city-business-buildings-near-each-other.jpg"
       alt="Banner Background"
       aria-hidden="true"
       draggable="false"
@@ -90,6 +88,8 @@ onUnmounted(() => {
 </template>
 
 <style scoped lang="scss">
+// dd7f3e
+
 .banner {
   position: relative;
   width: 100%;
@@ -139,7 +139,7 @@ onUnmounted(() => {
 
 .banner-header {
   position: relative;
-  z-index: 2;
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -147,9 +147,11 @@ onUnmounted(() => {
 }
 
 .logo {
+  font-family: 'Bodoni Moda', serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
   color: inherit;
-  font-size: 28px;
-  font-weight: 800;
+  font-size: 24px;
   letter-spacing: 1px;
   text-decoration: none;
 }
@@ -161,14 +163,18 @@ onUnmounted(() => {
 }
 
 .menu-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
   color: inherit;
   font-size: 15px;
+  line-height: 1;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .menu-item:hover {
-  color: #7e55f6;
+  color: var(--main-color);
 }
 
 .menu-toggle {
@@ -188,18 +194,41 @@ onUnmounted(() => {
   padding: 96px 48px 0;
 }
 
+.sub-content-box {
+  width: 70%;
+}
+
 .banner-content {
+  .sub-title {
+    margin-bottom: 40px;
+    font-size: clamp(30px, 4.5vw, 60px);
+  }
+
+  .banner-content-title {
+    display: inline-block;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      width: 100%;
+      height: 1px;
+      background-color: var(--main-color);
+    }
+  }
+
+  .slogan {
+    font-size: clamp(24px, 3vw, 40px);
+  }
+
   h1 {
     margin: 0;
-    font-size: clamp(34px, 5vw, 100px);
+    font-size: clamp(42px, 5vw, 100px);
     font-weight: 200;
     line-height: 1.1;
-    margin-bottom: 20px;
   }
 
   h3 {
     margin: 0;
-    font-size: clamp(24px, 3vw, 50px);
     font-weight: 200;
     line-height: 1.1;
     margin-bottom: 5px;
@@ -207,7 +236,7 @@ onUnmounted(() => {
 
   p {
     margin: 0;
-    font-size: clamp(12px, 2vw, 24px);
+    font-size: clamp(12px, 1.5vw, 16px);
     font-weight: 200;
     line-height: 1.1;
   }
@@ -229,6 +258,7 @@ onUnmounted(() => {
 
   .menu {
     position: absolute;
+    z-index: 999;
     top: 68px;
     right: 20px;
     display: none;
@@ -251,7 +281,13 @@ onUnmounted(() => {
   }
 
   .banner-content p {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .banner-content {
+    .sub-title {
+      margin-bottom: 20px;
+    }
   }
 }
 </style>
