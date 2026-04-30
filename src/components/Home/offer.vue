@@ -1,33 +1,11 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from 'vue'
-
 defineOptions({
   name: 'HomeOffer',
-})
-
-const bgOffsetY = ref(0)
-const PARALLAX_SPEED = 0.5 // 小于1：背景滚动慢于页面
-
-const updateBgOffset = () => {
-  bgOffsetY.value = window.scrollY * PARALLAX_SPEED
-}
-
-const offerStyle = computed(() => ({
-  backgroundPosition: `center calc(149% + ${bgOffsetY.value}px)`,
-}))
-
-onMounted(() => {
-  updateBgOffset()
-  window.addEventListener('scroll', updateBgOffset, { passive: true })
-})
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', updateBgOffset)
 })
 </script>
 
 <template>
-  <section class="offer" :style="offerStyle">
+  <section class="offer">
     <div class="offer-mask">
       <div class="offer-content">
         <h2 data-aos="fade-up">What We Offer</h2>
@@ -57,8 +35,9 @@ onUnmounted(() => {
   position: relative;
   background-image: url('@/assets/high-angle-shot-beautiful-lights-buildings-skyscrapers-captured-night.jpg');
   background-repeat: no-repeat;
-  background-size: 129%;
+  background-size: cover;
   background-position: center center;
+  background-attachment: scroll;
 }
 
 .offer-mask {
@@ -89,9 +68,6 @@ onUnmounted(() => {
   line-height: 1.75;
 }
 
-.ul-box {
-  /* text-align: lef; */
-}
 @media (max-width: 1024px) {
   .offer,
   .offer-mask {

@@ -14,8 +14,8 @@ defineOptions({
     </div>
     <div class="why-item">
       <div class="why-item-answer">
-        <strong data-aos="fade-right" data-aos-offset="20" data-aos-delay="100">one</strong>
-        <p data-aos="fade-right" data-aos-offset="20" data-aos-delay="200">
+        <strong data-aos="fade-down" data-aos-offset="20" data-aos-delay="100">one</strong>
+        <p data-aos="fade-down" data-aos-offset="20" data-aos-delay="200">
           Many schools take a broad approach when entering new markets, building multiple
           connections across different regions.
         </p>
@@ -23,8 +23,8 @@ defineOptions({
     </div>
     <div class="why-item">
       <div class="why-item-answer">
-        <strong data-aos="fade-right" data-aos-offset="20" data-aos-delay="300">Two</strong>
-        <p data-aos="fade-right" data-aos-offset="20" data-aos-delay="400">
+        <strong data-aos="fade-down" data-aos-offset="20" data-aos-delay="200">Two</strong>
+        <p data-aos="fade-down" data-aos-offset="20" data-aos-delay="300">
           While this can be valuable at an early stage, developing meaningful and sustainable
           partnerships often requires a more focused and structured approach.
         </p>
@@ -32,8 +32,8 @@ defineOptions({
     </div>
     <div class="why-item">
       <div class="why-item-answer">
-        <strong data-aos="fade-right" data-aos-offset="20" data-aos-delay="500">Three</strong>
-        <p data-aos="fade-right" data-aos-offset="20" data-aos-delay="600">
+        <strong data-aos="fade-down" data-aos-offset="20" data-aos-delay="300">Three</strong>
+        <p data-aos="fade-down" data-aos-offset="20" data-aos-delay="400">
           KISC supports schools in making this transition — from initial exploration to carefully
           developed and well-aligned engagement.
         </p>
@@ -76,11 +76,70 @@ defineOptions({
   }
   &.why-item-answer {
     strong {
+      position: relative;
       display: block;
       font-size: 26px;
       margin-bottom: 16px;
+      padding-top: 26px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 56px;
+        height: 1px;
+        background: #4c71df;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 28px;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #4c71df;
+        border-radius: 0;
+        transform: none;
+        background: #4c71df;
+      }
     }
   }
+}
+
+.why-item:nth-child(2) .why-item-answer strong::before {
+  width: 56px;
+}
+
+.why-item:nth-child(2) .why-item-answer strong::after {
+  left: 28px;
+  width: 12px;
+  height: 12px;
+  background: #4c71df;
+}
+
+.why-item:nth-child(3) .why-item-answer strong::before {
+  width: 64px;
+}
+
+.why-item:nth-child(3) .why-item-answer strong::after {
+  left: 20px;
+  width: 14px;
+  height: 8px;
+  background: transparent;
+}
+
+.why-item:nth-child(4) .why-item-answer strong::before {
+  width: 48px;
+}
+
+.why-item:nth-child(4) .why-item-answer strong::after {
+  left: 34px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
 }
 
 @media (max-width: 1024px) {
@@ -89,6 +148,9 @@ defineOptions({
     min-height: 920px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, minmax(180px, 1fr));
+  }
+  .why-item > div {
+    width: auto;
   }
 }
 </style>
