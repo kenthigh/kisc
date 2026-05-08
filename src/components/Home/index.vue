@@ -5,6 +5,8 @@ import Offer from './offer.vue'
 import Work from './work.vue'
 import How from './how.vue'
 import About from './about.vue'
+import Schools from './schools.vue'
+import Contact from './contact.vue'
 
 defineOptions({
   name: 'HomeSection',
@@ -31,7 +33,12 @@ defineOptions({
     <div id="about">
       <About />
     </div>
-    <div id="contact"></div>
+    <div id="about">
+      <Schools />
+    </div>
+    <div id="contact">
+      <Contact />
+    </div>
   </section>
 </template>
 

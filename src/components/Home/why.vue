@@ -57,6 +57,8 @@ defineOptions({
   text-align: left;
   text-align: center;
   padding: 100px;
+  background-color: #fff;
+  color: #1f1f1f;
 }
 
 .why {
@@ -170,6 +172,9 @@ defineOptions({
 }
 
 @media (max-width: 1024px) {
+  .why-title {
+    padding: 100px 0 0px 0;
+  }
   .why {
     height: auto;
     grid-template-columns: 1fr;

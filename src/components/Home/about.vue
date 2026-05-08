@@ -118,7 +118,7 @@ defineOptions({
 .about-card {
   padding: 22px 24px;
   //   border: 1px solid rgb(255 255 255 / 14%);
-  border-radius: 12px;
+  // border-radius: 12px;
   background: rgb(255 255 255 / 4%);
 
   p {

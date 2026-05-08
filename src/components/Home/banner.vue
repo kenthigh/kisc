@@ -44,7 +44,7 @@ onUnmounted(() => {
 <template>
   <section class="banner">
     <header class="banner-header">
-      <a class="logo" href="#home" aria-label="KISC 首页">KISC</a>
+      <a class="logo" href="#home" aria-label="KISC 首页"> KISC </a>
 
       <button
         class="menu-toggle"
@@ -86,7 +86,7 @@ onUnmounted(() => {
     </div>
 
     <img
-      src="@/assets/city-business-buildings-near-each-other.jpg"
+      src="https://res.cloudinary.com/dzk8mhglj/image/upload/f_auto,q_auto/city-business-buildings-near-each-other_zo1odf"
       alt="Banner Background"
       aria-hidden="true"
       draggable="false"
@@ -98,6 +98,9 @@ onUnmounted(() => {
 
 <style scoped lang="scss">
 // dd7f3e
+.contact-logo {
+  width: 100%;
+}
 
 .email-btn-box {
   margin-top: 40px;
@@ -125,6 +128,7 @@ onUnmounted(() => {
 .banner {
   position: relative;
   width: 100%;
+  min-height: 900px;
   padding-bottom: 80px;
   overflow: hidden;
   color: #fff;
@@ -268,8 +272,7 @@ onUnmounted(() => {
 
 @media (max-width: 900px) {
   .banner {
-    // height: 70vh;
-    // min-height: 440px;
+    min-height: auto;
   }
 
   .banner-header {
