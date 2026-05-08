@@ -10,10 +10,10 @@ const steps = [
   },
   {
     title: 'Connections and development',
-    desc: `We introduce carefully selected opportunities and support the development of programmes, including immersion experiences and collaborative initiatives.`,
+    desc: `We introduce carefully selected opportunities and support the development of programmes and partnerships.`,
   },
   {
-    title: 'Sustained engagement',
+    title: 'Ongoing guidance and adjustment',
     desc: `Our work continues over time, supporting relationships as they develop in a stable and consistent way.`,
   },
 ]
@@ -26,8 +26,8 @@ const steps = [
         <p class="eyebrow" data-aos="fade-up">How We Work</p>
         <h2 data-aos="fade-up" data-aos-delay="50">Structured, practical, and built to last.</h2>
         <p class="lead" data-aos="fade-up" data-aos-delay="90">
-          We take a structured and practical approach to international engagement, working closely
-          with schools to ensure that each opportunity is appropriate and sustainable.
+          We take a structured and practical approach to international engagement, ensuring that
+          each opportunity is appropriate, aligned, and sustainable.
         </p>
       </aside>
 

@@ -10,7 +10,7 @@ defineOptions({
       <div class="offer-content-left">
         <h2 data-aos="fade-up" class="offer-title">What We Offer</h2>
         <p data-aos="fade-up" data-aos-delay="50" class="offer-sub-title">
-          We work with a small number of UK schools to support:
+          We work with a small number of UK independent schools each year, supporting:
         </p>
         <ul class="ul-box">
           <li data-aos="fade-up" data-aos-delay="100">1. Market understanding and positioning</li>
@@ -23,7 +23,7 @@ defineOptions({
         <div>
           <br />
           <p data-aos="fade-up" data-aos-delay="100">
-            Our work is designed to ensure that time, effort and investment are directed towards
+            Our role is to ensure that time, effort and investment are directed towards
             opportunities that can genuinely develop.
           </p>
         </div>
@@ -48,10 +48,11 @@ defineOptions({
   min-height: 720px;
   display: flex;
   flex-direction: row;
+  /* max-width: 80%; */
   /* align-items: center; */
   justify-content: center;
   background-color: rgb(0 0 0 / 70%);
-  padding: 80px 124px;
+  padding: 100px 124px;
   color: white;
 }
 

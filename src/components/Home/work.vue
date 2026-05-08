@@ -34,8 +34,11 @@ onUnmounted(() => {
           <h2 data-aos="fade-up">Our Work</h2>
           <p data-aos="fade-up" data-aos-delay="60">
             KISC supports UK independent schools in developing structured engagement with Asia,
-            particularly China. Our work focuses on building connections that are appropriate,
-            sustainable, and aligned with each school&rsquo;s long-term priorities.
+            particularly China.
+          </p>
+          <p>
+            Our work focuses on building connections that are appropriate, sustainable, and aligned
+            with each school’s long-term priorities.
           </p>
         </div>
 
@@ -44,28 +47,36 @@ onUnmounted(() => {
             <h3>International Engagement</h3>
             <p>
               We support schools in exploring and developing their presence across Asia through
-              carefully selected partnerships and structured programmes.
+              carefully selected partnerships and structured engagement.
+            </p>
+            <p>
+              This includes initial positioning, market understanding, and ongoing development of
+              relationships over time.
             </p>
           </article>
           <article class="offer-item" data-aos="zoom-out" data-aos-delay="110">
             <h3>Immersion Programmes</h3>
             <p>
-              Short-term and term-time immersion experiences that provide meaningful engagement
-              between UK schools and international partners.
+              We design and support short-term and term-time immersion experiences that provide
+              meaningful interaction between UK schools and international partners.
+            </p>
+            <p>
+              These programmes are built to reflect both educational value and long-term
+              relationship potential.
             </p>
           </article>
           <article class="offer-item" data-aos="zoom-out" data-aos-delay="140">
             <h3>Student Pathways</h3>
             <p>
-              Development of longer-term student pathways that reflect both academic suitability and
-              cultural alignment.
+              We support the development of longer-term student pathways based on academic
+              suitability, cultural alignment, and realistic expectations on both sides.
             </p>
           </article>
           <article class="offer-item" data-aos="zoom-out" data-aos-delay="170">
             <h3>Strategic Collaboration</h3>
             <p>
-              Support for broader forms of cooperation, including curriculum exchange, joint
-              initiatives, and institutional partnerships.
+              Beyond student programmes, we support broader forms of cooperation, including
+              curriculum exchange, joint initiatives, and institutional partnerships.
             </p>
           </article>
         </div>
@@ -102,7 +113,7 @@ onUnmounted(() => {
 
 .offer-head {
   text-align: center;
-  margin-bottom: 86px;
+  margin-bottom: 100px;
 }
 
 .offer-head h2 {
@@ -128,21 +139,20 @@ onUnmounted(() => {
 
 .offer-item {
   padding: 22px 24px;
-  /* border: 1px solid rgb(255 255 255 / 26%); */
   border-radius: 14px;
-  /* background: rgb(255 255 255 / 8%); */
+  margin-bottom: 10px;
 }
 
 .offer-item h3 {
   margin: 0 0 8px;
-  font-size: clamp(14px, 1.5vw, 20px);
+  font-size: clamp(18px, 1.5vw, 24px);
   font-weight: 600;
   text-align: center;
 }
 
 .offer-item p {
   margin: 0;
-  font-size: clamp(14px, 1.1vw, 18px);
+  font-size: clamp(14px, 1.1vw, 16px);
   line-height: 1.7;
   font-weight: 100;
   text-align: center;
@@ -165,7 +175,7 @@ onUnmounted(() => {
   }
 
   .offer-head {
-    margin-bottom: 24px;
+    margin-bottom: 38px;
   }
 
   .offer-item {

@@ -30,8 +30,10 @@ const imageStyle = computed(() => ({
 }))
 
 onMounted(() => {
-  updateBackground()
-  window.addEventListener('scroll', updateBackground, { passive: true })
+  if (window.innerWidth > 900) {
+    updateBackground()
+    window.addEventListener('scroll', updateBackground, { passive: true })
+  }
 })
 
 onUnmounted(() => {
@@ -70,9 +72,16 @@ onUnmounted(() => {
           A trusted bridge between UK independent schools and Asia
         </h3>
         <p data-aos="fade-right" data-aos-delay="100">
-          We support schools in developing meaningful, well-aligned and sustainable engagement with
-          international partners, particularly in China.
+          Most schools explore international opportunities, but meaningful and sustainable
+          engagement requires more than broad connections alone. We focus on ensuring that the right
+          opportunities are pursued, supporting schools in developing well-aligned and long-term
+          partnerships, particularly within the China market.
         </p>
+      </div>
+      <div class="email-btn-box">
+        <a href="mailto:info@kisc.co.uk" class="email-btn" data-aos="fade-up" data-aos-delay="130">
+          Start a conversation
+        </a>
       </div>
     </div>
 
@@ -90,19 +99,35 @@ onUnmounted(() => {
 <style scoped lang="scss">
 // dd7f3e
 
+.email-btn-box {
+  margin-top: 40px;
+}
+
+.email-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  &:hover {
+    background: var(--main-color);
+    color: #fff;
+    border-color: var(--main-color);
+  }
+}
+
 .banner {
   position: relative;
   width: 100%;
-  height: 688px;
-  min-height: 688px;
+  padding-bottom: 80px;
   overflow: hidden;
   color: #fff;
-  // background-image:
-  //   linear-gradient(180deg, rgb(0 0 0 / 60%) 0%, rgb(0 0 0 / 50%) 36%, rgb(0 0 0 / 55%) 100%),
-  //   url('@/assets/residential-building-facades-rotterdam-netherlands.jpg');
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
 
   &::before {
     content: '';
@@ -127,8 +152,6 @@ onUnmounted(() => {
   left: -4%;
   width: calc(100% + $bg-expand);
   height: calc(100% + $bg-expand);
-  // width: 100%;
-  // height: 100%;
   object-fit: cover;
   transform-origin: center;
   will-change: transform;
@@ -218,6 +241,7 @@ onUnmounted(() => {
 
   .slogan {
     font-size: clamp(24px, 3vw, 40px);
+    margin-bottom: 10px;
   }
 
   h1 {
@@ -244,8 +268,8 @@ onUnmounted(() => {
 
 @media (max-width: 900px) {
   .banner {
-    height: 70vh;
-    min-height: 440px;
+    // height: 70vh;
+    // min-height: 440px;
   }
 
   .banner-header {

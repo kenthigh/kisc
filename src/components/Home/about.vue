@@ -17,7 +17,7 @@ defineOptions({
       <div class="about-body">
         <article class="about-card" data-aos="fade-up" data-aos-delay="70">
           <p>
-            KISC is a UK-Asia education engagement platform built on long-term relationships across
+            KISC is a UK–Asia education engagement platform built on long-term relationships across
             independent schools and international partners.
           </p>
         </article>
@@ -25,29 +25,43 @@ defineOptions({
         <article class="about-card" data-aos="fade-up" data-aos-delay="100">
           <p>
             Our work is shaped by practical experience within both the UK independent school sector
-            and the Asia education landscape. We support schools in making informed and well-aligned
-            decisions when engaging with international markets, helping them identify appropriate
-            partners and develop sustainable forms of collaboration.
+            and the Asia education landscape.
           </p>
         </article>
 
         <article class="about-card" data-aos="fade-up" data-aos-delay="130">
           <p>
-            Rather than focusing on volume of activity, we place emphasis on careful selection,
-            cultural understanding, and long-term development.
+            We support schools in making informed and well-aligned decisions when engaging with
+            international markets, helping them identify appropriate partners and develop
+            sustainable forms of collaboration.
           </p>
         </article>
 
         <blockquote class="about-quote" data-aos="fade-up" data-aos-delay="160">
-          Our approach reflects a simple principle: meaningful partnerships are built over time, not
-          through initial contact alone.
+          Rather than focusing on the volume of activity, we place emphasis on careful selection,
+          cultural understanding, and long-term development.
+          <br />
+          <br />
+          Our work focuses on identifying which partnerships are most likely to succeed, rather than
+          simply increasing the number of connections.
         </blockquote>
 
         <article class="about-card about-card--strong" data-aos="fade-up" data-aos-delay="190">
           <p>
-            Our work has evolved over many years through ongoing collaboration with schools and
-            partners, developing into a structured approach that continues to operate through an
-            established network.
+            Our approach has evolved over time through ongoing collaboration, developing into a
+            structured model that continues to operate through an established network of schools and
+            partners.
+          </p>
+        </article>
+
+        <article class="about-card about-card--strong" data-aos="fade-up" data-aos-delay="190">
+          <p>
+            Our understanding of the China market is informed not only by project experience, but
+            also by long-term exposure to how international education partnerships develop within
+            local regulatory and policy contexts.
+            <br />
+            This allows us to approach engagement with a clearer sense of what is viable,
+            appropriate, and sustainable over time.
           </p>
         </article>
       </div>
