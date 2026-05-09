@@ -89,7 +89,7 @@ defineOptions({
   padding: 104px 24px;
   background:
     linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
-    url('https://res.cloudinary.com/dzk8mhglj/image/upload/q_auto/f_auto/v1778297108/cool-background-inside-building-with-metal-textures_l7sxfc.jpg')
+    url('https://res.cloudinary.com/dzk8mhglj/image/upload/c_fill,w_2400,h_1600/v1778297108/cool-background-inside-building-with-metal-textures_l7sxfc.jpg')
       center center/cover no-repeat;
   background-attachment: fixed;
 }

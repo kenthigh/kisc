@@ -93,7 +93,7 @@ onUnmounted(() => {
     </div>
 
     <img
-      src="https://res.cloudinary.com/dzk8mhglj/image/upload/f_auto,q_auto/city-business-buildings-near-each-other_zo1odf"
+      src="https://res.cloudinary.com/dzk8mhglj/image/upload/c_fill,w_2400,h_1600/v1778307485/city-business-buildings-near-each-other_zo1odf.jpg"
       alt="Banner Background"
       aria-hidden="true"
       draggable="false"

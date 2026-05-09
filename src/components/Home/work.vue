@@ -135,7 +135,7 @@ onUnmounted(() => {
   width: 100%;
   min-height: 720px;
   position: relative;
-  background-image: url('https://res.cloudinary.com/dzk8mhglj/image/upload/q_auto/f_auto/v1778297120/grayscale-low-angle-shot-skyscraper-wall-with-glass-windows-cloudy-sky_j5mhof.jpg');
+  background-image: url('https://res.cloudinary.com/dzk8mhglj/image/upload/c_fill,w_1840,h_1228/v1778307304/grayscale-low-angle-shot-skyscraper-wall-with-glass-windows-cloudy-sky_j5mhof.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

@@ -84,7 +84,7 @@ defineOptions({
   width: 100%;
   min-height: 720px;
   position: relative;
-  background-image: url('https://res.cloudinary.com/dzk8mhglj/image/upload/q_auto/f_auto/v1778297124/high-angle-shot-beautiful-lights-buildings-skyscrapers-captured-night_v0e4k0.jpg');
+  background-image: url('https://res.cloudinary.com/dzk8mhglj/image/upload/c_fill,w_1857,h_1238/v1778307255/high-angle-shot-beautiful-lights-buildings-skyscrapers-captured-night_v0e4k0.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
