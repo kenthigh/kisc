@@ -31,11 +31,25 @@ onUnmounted(() => {
     <div class="offer-mask">
       <div class="offer-shell">
         <div class="offer-copy">
-          <p class="offer-eyebrow" data-aos="fade-up" data-aos-once="true">Our Work</p>
-          <h2 class="offer-title" data-aos="fade-up" data-aos-once="true" data-aos-delay="60">
+          <p class="offer-eyebrow" data-aos="fade-up" data-aos-once="true" data-aos-offset="50">
+            Our Work
+          </p>
+          <h2
+            class="offer-title"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-offset="50"
+            data-aos-delay="100"
+          >
             Structured, long-term engagement built with care and clarity.
           </h2>
-          <p class="offer-intro" data-aos="fade-up" data-aos-once="true" data-aos-delay="120">
+          <p
+            class="offer-intro"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-offset="50"
+            data-aos-delay="100"
+          >
             KISC supports UK independent schools in developing considered engagement with Asia,
             particularly China, through partnerships and programmes that are appropriate,
             sustainable, and aligned with long-term priorities.
@@ -47,8 +61,9 @@ onUnmounted(() => {
             <article
               class="offer-item"
               data-aos="fade-up"
-              data-aos-delay="120"
+              data-aos-delay="100"
               data-aos-once="true"
+              data-aos-offset="50"
             >
               <span class="offer-item-index" aria-hidden="true"></span>
               <div class="offer-item-copy">
@@ -67,8 +82,9 @@ onUnmounted(() => {
             <article
               class="offer-item"
               data-aos="fade-up"
-              data-aos-delay="160"
+              data-aos-delay="100"
               data-aos-once="true"
+              data-aos-offset="50"
             >
               <span class="offer-item-index" aria-hidden="true"></span>
               <div class="offer-item-copy">
@@ -87,8 +103,9 @@ onUnmounted(() => {
             <article
               class="offer-item"
               data-aos="fade-up"
-              data-aos-delay="200"
+              data-aos-delay="100"
               data-aos-once="true"
+              data-aos-offset="50"
             >
               <span class="offer-item-index" aria-hidden="true"></span>
               <div class="offer-item-copy">
@@ -103,8 +120,9 @@ onUnmounted(() => {
             <article
               class="offer-item"
               data-aos="fade-up"
-              data-aos-delay="240"
+              data-aos-delay="100"
               data-aos-once="true"
+              data-aos-offset="50"
             >
               <span class="offer-item-index" aria-hidden="true"></span>
               <div class="offer-item-copy">
@@ -117,7 +135,13 @@ onUnmounted(() => {
             </article>
           </div>
 
-          <aside class="offer-note" data-aos="fade-down" data-aos-delay="180" data-aos-once="true">
+          <aside
+            class="offer-note"
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-once="true"
+            data-aos-offset="50"
+          >
             <span class="offer-note-line" aria-hidden="true"></span>
             <p>
               We focus on connections that are measured, credible, and capable of developing into
