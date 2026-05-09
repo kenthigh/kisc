@@ -6,7 +6,10 @@ import 'aos/dist/aos.css'
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  AOS.init()
+  AOS.init({
+    offset: -200,
+    delay: 100,
+  })
 })
 </script>
 

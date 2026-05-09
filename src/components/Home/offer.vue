@@ -9,25 +9,11 @@ defineOptions({
     <div class="offer-mask">
       <div class="offer-shell">
         <div class="offer-copy">
-          <p class="offer-eyebrow" data-aos="fade-up" data-aos-once="true" data-aos-offset="50">
-            What We Offer
-          </p>
-          <h2
-            class="offer-title"
-            data-aos="fade-up"
-            data-aos-once="true"
-            data-aos-offset="50"
-            data-aos-delay="60"
-          >
+          <p class="offer-eyebrow" data-aos="fade-up" data-aos-once="true">What We Offer</p>
+          <h2 class="offer-title" data-aos="fade-up" data-aos-once="true" data-aos-delay="60">
             Focused support for schools building meaningful engagement with Asia.
           </h2>
-          <p
-            class="offer-intro"
-            data-aos="fade-up"
-            data-aos-once="true"
-            data-aos-offset="50"
-            data-aos-delay="120"
-          >
+          <p class="offer-intro" data-aos="fade-up" data-aos-once="true" data-aos-delay="120">
             We work with a small number of UK independent schools each year, helping them shape the
             right strategy, identify suitable partners, and develop long-term opportunities with
             clarity and purpose.
@@ -35,15 +21,9 @@ defineOptions({
         </div>
 
         <div class="offer-grid">
-          <div
-            class="offer-list-card"
-            data-aos="fade-up"
-            data-aos-once="true"
-            data-aos-offset="50"
-            data-aos-delay="120"
-          >
+          <div class="offer-list-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="120">
             <ul class="offer-list">
-              <li data-aos="fade-up" data-aos-once="true" data-aos-offset="50" data-aos-delay="160">
+              <li data-aos="fade-down" data-aos-once="true" data-aos-delay="160">
                 <span class="offer-index" aria-hidden="true"></span>
                 <div class="offer-item-copy">
                   <h3>Market understanding and positioning</h3>
@@ -53,7 +33,7 @@ defineOptions({
                   </p>
                 </div>
               </li>
-              <li data-aos="fade-up" data-aos-once="true" data-aos-offset="50" data-aos-delay="200">
+              <li data-aos="fade-down" data-aos-once="true" data-aos-delay="200">
                 <span class="offer-index" aria-hidden="true"></span>
                 <div class="offer-item-copy">
                   <h3>Partner identification and selection</h3>
@@ -63,7 +43,7 @@ defineOptions({
                   </p>
                 </div>
               </li>
-              <li data-aos="fade-up" data-aos-once="true" data-aos-offset="50" data-aos-delay="240">
+              <li data-aos="fade-down" data-aos-once="true" data-aos-delay="240">
                 <span class="offer-index" aria-hidden="true"></span>
                 <div class="offer-item-copy">
                   <h3>Programme development and delivery</h3>
@@ -73,7 +53,7 @@ defineOptions({
                   </p>
                 </div>
               </li>
-              <li data-aos="fade-up" data-aos-once="true" data-aos-offset="50" data-aos-delay="280">
+              <li data-aos="fade-down" data-aos-once="true" data-aos-delay="280">
                 <span class="offer-index" aria-hidden="true"></span>
                 <div class="offer-item-copy">
                   <h3>Long-term relationship building</h3>
@@ -86,13 +66,7 @@ defineOptions({
             </ul>
           </div>
 
-          <aside
-            class="offer-note"
-            data-aos="fade-down"
-            data-aos-once="true"
-            data-aos-offset="50"
-            data-aos-delay="180"
-          >
+          <aside class="offer-note" data-aos="fade-down" data-aos-once="true" data-aos-delay="180">
             <span class="offer-note-line" aria-hidden="true"></span>
             <p>
               Our role is to ensure that time, effort, and investment are directed towards

@@ -33,7 +33,7 @@ const intro = [
           class="lead"
           data-aos="fade-up"
           data-aos-once="true"
-          :data-aos-delay="90 + index * 40"
+          :data-aos-delay="90"
         >
           {{ item }}
         </p>
@@ -44,9 +44,8 @@ const intro = [
           v-for="(school, index) in schools"
           :key="school"
           class="school-card"
-          data-aos="fade-up"
+          data-aos="fade-down"
           data-aos-once="true"
-          :data-aos-delay="50"
         >
           <span class="school-index">{{ String(index + 1).padStart(2, '0') }}</span>
           <h3>{{ school }}</h3>

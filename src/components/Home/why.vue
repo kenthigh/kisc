@@ -7,22 +7,22 @@ defineOptions({
 
 <template>
   <div>
-    <div class="why-title" data-aos="fade" data-aos-offset="0">Why KISC ?</div>
+    <div class="why-title" data-aos="fade">Why KISC ?</div>
     <section class="why">
       <div class="why-item">
         <div class="why-item-answer">
-          <strong data-aos="fade-down" data-aos-once="true" data-aos-offset="0"
+          <strong data-aos="fade-down" data-aos-once="true"
             >The reality of international engagement
           </strong>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-offset="0">
+          <p data-aos="fade-down" data-aos-once="true">
             Many schools take a broad approach when entering Asia, building multiple connections
             across different markets.
           </p>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-offset="0">
+          <p data-aos="fade-down" data-aos-once="true">
             While this can be valuable at an early stage, only a small number of these connections
             develop into partnerships that are truly sustainable.
           </p>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-offset="0">
+          <p data-aos="fade-down" data-aos-once="true">
             Without careful alignment, international engagement can consume significant time, effort
             and resources without delivering meaningful outcomes.
           </p>
@@ -30,18 +30,18 @@ defineOptions({
       </div>
       <div class="why-item">
         <div class="why-item-answer">
-          <strong data-aos="fade-down" data-aos-once="true" data-aos-offset="0"
+          <strong data-aos="fade-down" data-aos-once="true"
             >A more focused and structured approach
           </strong>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-offset="0">
+          <p data-aos="fade-down" data-aos-once="true">
             KISC supports schools in moving from initial exploration to carefully developed and
             well-aligned engagement.
           </p>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-offset="0">
+          <p data-aos="fade-down" data-aos-once="true">
             Our work is not about increasing the volume of connections, but about identifying which
             partnerships are most likely to succeed.
           </p>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-offset="0">
+          <p data-aos="fade-down" data-aos-once="true">
             We combine market understanding, practical experience, and long-term relationship
             development to ensure that each opportunity is both appropriate and sustainable.
           </p>

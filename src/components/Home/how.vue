@@ -35,12 +35,12 @@ const steps = [
 
       <div class="how-track">
         <article
-          v-for="(step, index) in steps"
+          v-for="step in steps"
           :key="step.title"
           class="how-step"
           data-aos="fade-down"
           data-aos-once="true"
-          :data-aos-delay="120 + index * 50"
+          :data-aos-delay="120"
         >
           <span class="dot" aria-hidden="true"></span>
           <div class="card">

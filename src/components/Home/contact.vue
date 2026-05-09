@@ -8,14 +8,7 @@ defineOptions({
 
 <template>
   <section class="contact">
-    <img
-      class="contact-logo"
-      :src="logo"
-      alt="KISC"
-      data-aos="fade-down"
-      data-aos-once="true"
-      data-aos-offset="50"
-    />
+    <img class="contact-logo" :src="logo" alt="KISC" data-aos="fade-down" data-aos-once="true" />
     <div class="contact-grid">
       <div class="contact-panel contact-left">
         <div class="contact-left-inner">
@@ -25,7 +18,7 @@ defineOptions({
               data-aos="fade-down"
               data-aos-delay="40"
               data-aos-once="true"
-              data-aos-offset="50"
+              data-aos-offset="-200"
             >
               For enquiries and collaboration opportunities
             </p>
@@ -36,7 +29,7 @@ defineOptions({
               data-aos="fade-down"
               data-aos-delay="40"
               data-aos-once="true"
-              data-aos-offset="50"
+              data-aos-offset="-200"
             >
               Contact us
             </a>
@@ -46,7 +39,7 @@ defineOptions({
 
       <div class="contact-panel contact-right">
         <div class="contact-right-inner">
-          <p class="contact-email" data-aos="fade-down" data-aos-once="true" data-aos-offset="50">
+          <p class="contact-email" data-aos="fade-down" data-aos-once="true" data-aos-offset="-200">
             info@kisc.co.uk
           </p>
           <p
@@ -54,7 +47,7 @@ defineOptions({
             data-aos="fade-down"
             data-aos-delay="40"
             data-aos-once="true"
-            data-aos-offset="50"
+            data-aos-offset="-200"
           >
             London | Chengdu | Tokyo
           </p>
@@ -63,7 +56,7 @@ defineOptions({
             data-aos="fade-down"
             data-aos-delay="80"
             data-aos-once="true"
-            data-aos-offset="50"
+            data-aos-offset="-200"
           >
             We work with a limited number of schools and partners each year.
           </p>
