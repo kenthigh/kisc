@@ -11,18 +11,18 @@ defineOptions({
     <section class="why">
       <div class="why-item">
         <div class="why-item-answer">
-          <strong data-aos="fade-down" data-aos-offset="0"
+          <strong data-aos="fade-down" data-aos-once="true" data-aos-offset="0"
             >The reality of international engagement
           </strong>
-          <p data-aos="fade-down" data-aos-offset="0">
+          <p data-aos="fade-down" data-aos-once="true" data-aos-offset="0">
             Many schools take a broad approach when entering Asia, building multiple connections
             across different markets.
           </p>
-          <p data-aos="fade-down" data-aos-offset="0">
+          <p data-aos="fade-down" data-aos-once="true" data-aos-offset="0">
             While this can be valuable at an early stage, only a small number of these connections
             develop into partnerships that are truly sustainable.
           </p>
-          <p data-aos="fade-down" data-aos-offset="0">
+          <p data-aos="fade-down" data-aos-once="true" data-aos-offset="0">
             Without careful alignment, international engagement can consume significant time, effort
             and resources without delivering meaningful outcomes.
           </p>
@@ -30,18 +30,18 @@ defineOptions({
       </div>
       <div class="why-item">
         <div class="why-item-answer">
-          <strong data-aos="fade-down" data-aos-offset="0"
+          <strong data-aos="fade-down" data-aos-once="true" data-aos-offset="0"
             >A more focused and structured approach
           </strong>
-          <p data-aos="fade-down" data-aos-offset="0">
+          <p data-aos="fade-down" data-aos-once="true" data-aos-offset="0">
             KISC supports schools in moving from initial exploration to carefully developed and
             well-aligned engagement.
           </p>
-          <p data-aos="fade-down" data-aos-offset="0">
+          <p data-aos="fade-down" data-aos-once="true" data-aos-offset="0">
             Our work is not about increasing the volume of connections, but about identifying which
             partnerships are most likely to succeed.
           </p>
-          <p data-aos="fade-down" data-aos-offset="0">
+          <p data-aos="fade-down" data-aos-once="true" data-aos-offset="0">
             We combine market understanding, practical experience, and long-term relationship
             development to ensure that each opportunity is both appropriate and sustainable.
           </p>
@@ -56,9 +56,14 @@ defineOptions({
   font-size: clamp(26px, 5vw, 40px);
   text-align: left;
   text-align: center;
-  padding: 100px;
+  padding: 80px;
   background-color: #fff;
   color: #1f1f1f;
+  /* color: #1f1f1f; */
+
+  font-weight: 100;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .why {
@@ -93,7 +98,7 @@ defineOptions({
 /* 第3和第4项右侧加边框 */
 .why-item:nth-child(1),
 .why-item:nth-child(2) {
-  padding: 100px 24px;
+  padding: 80px 24px 100px 24px;
   border-right: 1px solid #e9e9e9;
 }
 
@@ -173,7 +178,7 @@ defineOptions({
 
 @media (max-width: 1024px) {
   .why-title {
-    padding: 100px 0 0px 0;
+    padding: 80px 0 0px 0;
   }
   .why {
     height: auto;

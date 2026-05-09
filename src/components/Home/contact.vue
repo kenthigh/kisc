@@ -8,12 +8,25 @@ defineOptions({
 
 <template>
   <section class="contact">
-    <img class="contact-logo" :src="logo" alt="KISC" data-aos="fade-down" />
+    <img
+      class="contact-logo"
+      :src="logo"
+      alt="KISC"
+      data-aos="fade-down"
+      data-aos-once="true"
+      data-aos-offset="50"
+    />
     <div class="contact-grid">
       <div class="contact-panel contact-left">
         <div class="contact-left-inner">
           <div class="contact-copy">
-            <p class="contact-intro" data-aos="fade-down" data-aos-delay="40">
+            <p
+              class="contact-intro"
+              data-aos="fade-down"
+              data-aos-delay="40"
+              data-aos-once="true"
+              data-aos-offset="50"
+            >
               For enquiries and collaboration opportunities
             </p>
 
@@ -21,7 +34,9 @@ defineOptions({
               class="contact-button"
               href="mailto:info@kisc.co.uk"
               data-aos="fade-down"
-              data-aos-delay="80"
+              data-aos-delay="40"
+              data-aos-once="true"
+              data-aos-offset="50"
             >
               Contact us
             </a>
@@ -31,11 +46,25 @@ defineOptions({
 
       <div class="contact-panel contact-right">
         <div class="contact-right-inner">
-          <p class="contact-email" data-aos="fade-down">info@kisc.co.uk</p>
-          <p class="contact-locations" data-aos="fade-down" data-aos-delay="40">
+          <p class="contact-email" data-aos="fade-down" data-aos-once="true" data-aos-offset="50">
+            info@kisc.co.uk
+          </p>
+          <p
+            class="contact-locations"
+            data-aos="fade-down"
+            data-aos-delay="40"
+            data-aos-once="true"
+            data-aos-offset="50"
+          >
             London | Chengdu | Tokyo
           </p>
-          <p class="contact-note" data-aos="fade-down" data-aos-delay="80">
+          <p
+            class="contact-note"
+            data-aos="fade-down"
+            data-aos-delay="80"
+            data-aos-once="true"
+            data-aos-offset="50"
+          >
             We work with a limited number of schools and partners each year.
           </p>
         </div>
@@ -49,7 +78,7 @@ defineOptions({
   width: 100%;
   background: #fff;
   border-top: 1px solid #e9e9e9;
-  border-bottom: 1px solid #e9e9e9;
+  // border-bottom: 1px solid #e9e9e9;
 }
 
 .contact-grid {
@@ -134,8 +163,8 @@ defineOptions({
   margin: 0;
   color: #1f1f1f;
   font-size: clamp(28px, 3vw, 44px);
-  line-height: 1.2;
-  font-weight: 400;
+  line-height: 1;
+  font-weight: 100;
   word-break: break-word;
 }
 
@@ -186,7 +215,7 @@ defineOptions({
 
   .contact-left {
     border-right: 0;
-    border-bottom: 1px solid #e9e9e9;
+    // border-bottom: 1px solid #e9e9e9;
   }
 
   .contact-panel {
@@ -218,7 +247,7 @@ defineOptions({
 
   .contact-email {
     font-size: clamp(24px, 8vw, 32px);
-    line-height: 1.25;
+    line-height: 1;
   }
 
   .contact-locations {

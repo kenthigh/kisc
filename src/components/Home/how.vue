@@ -23,9 +23,11 @@ const steps = [
   <section class="how">
     <div class="how-inner">
       <aside class="how-intro">
-        <p class="eyebrow" data-aos="fade-up">How We Work</p>
-        <h2 data-aos="fade-up" data-aos-delay="50">Structured, practical, and built to last.</h2>
-        <p class="lead" data-aos="fade-up" data-aos-delay="90">
+        <p class="eyebrow" data-aos="fade-up" data-aos-once="true">How We Work</p>
+        <h2 data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
+          Structured, practical, and built to last.
+        </h2>
+        <p class="lead" data-aos="fade-up" data-aos-once="true" data-aos-delay="90">
           We take a structured and practical approach to international engagement, ensuring that
           each opportunity is appropriate, aligned, and sustainable.
         </p>
@@ -37,6 +39,7 @@ const steps = [
           :key="step.title"
           class="how-step"
           data-aos="fade-down"
+          data-aos-once="true"
           :data-aos-delay="120 + index * 50"
         >
           <span class="dot" aria-hidden="true"></span>
@@ -129,7 +132,7 @@ const steps = [
 .card {
   padding: 24px;
   //   border: 1px solid #d7e2fa;
-  border-radius: 14px;
+  border-radius: 10px;
   background: #fff;
   //   box-shadow: 0 10px 26px rgb(23 53 118 / 8%);
 }

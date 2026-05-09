@@ -23,13 +23,16 @@ const intro = [
   <section class="schools">
     <div class="schools-inner">
       <aside class="schools-intro">
-        <p class="eyebrow" data-aos="fade-up">Our Network</p>
-        <h2 data-aos="fade-up" data-aos-delay="50">Selected schools. Long-term relationships.</h2>
+        <p class="eyebrow" data-aos="fade-up" data-aos-once="true">Our Network</p>
+        <h2 data-aos="fade-up" data-aos-delay="50" data-aos-once="true">
+          Selected schools. Long-term relationships.
+        </h2>
         <p
           v-for="(item, index) in intro"
           :key="index"
           class="lead"
           data-aos="fade-up"
+          data-aos-once="true"
           :data-aos-delay="90 + index * 40"
         >
           {{ item }}
@@ -42,6 +45,7 @@ const intro = [
           :key="school"
           class="school-card"
           data-aos="fade-up"
+          data-aos-once="true"
           :data-aos-delay="50"
         >
           <span class="school-index">{{ String(index + 1).padStart(2, '0') }}</span>

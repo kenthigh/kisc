@@ -8,28 +8,28 @@ defineOptions({
   <section class="about">
     <div class="about-inner">
       <aside class="about-side">
-        <p class="eyebrow" data-aos="fade-up">About KISC</p>
-        <h2 data-aos="fade-up" data-aos-delay="40">
+        <p class="eyebrow" data-aos="fade-up" data-aos-once="true">About KISC</p>
+        <h2 data-aos="fade-up" data-aos-once="true" data-aos-delay="40">
           Built on trusted UK-Asia relationships and sustained educational collaboration.
         </h2>
       </aside>
 
       <div class="about-body">
-        <article class="about-card" data-aos="fade-up" data-aos-delay="70">
+        <article class="about-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="70">
           <p>
             KISC is a UK–Asia education engagement platform built on long-term relationships across
             independent schools and international partners.
           </p>
         </article>
 
-        <article class="about-card" data-aos="fade-up" data-aos-delay="100">
+        <article class="about-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
           <p>
             Our work is shaped by practical experience within both the UK independent school sector
             and the Asia education landscape.
           </p>
         </article>
 
-        <article class="about-card" data-aos="fade-up" data-aos-delay="130">
+        <article class="about-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="130">
           <p>
             We support schools in making informed and well-aligned decisions when engaging with
             international markets, helping them identify appropriate partners and develop
@@ -37,7 +37,12 @@ defineOptions({
           </p>
         </article>
 
-        <blockquote class="about-quote" data-aos="fade-up" data-aos-delay="160">
+        <blockquote
+          class="about-quote"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-delay="160"
+        >
           Rather than focusing on the volume of activity, we place emphasis on careful selection,
           cultural understanding, and long-term development.
           <br />
@@ -46,7 +51,12 @@ defineOptions({
           simply increasing the number of connections.
         </blockquote>
 
-        <article class="about-card about-card--strong" data-aos="fade-up" data-aos-delay="190">
+        <article
+          class="about-card about-card--strong"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-delay="190"
+        >
           <p>
             Our approach has evolved over time through ongoing collaboration, developing into a
             structured model that continues to operate through an established network of schools and
@@ -54,7 +64,12 @@ defineOptions({
           </p>
         </article>
 
-        <article class="about-card about-card--strong" data-aos="fade-up" data-aos-delay="190">
+        <article
+          class="about-card about-card--strong"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-delay="190"
+        >
           <p>
             Our understanding of the China market is informed not only by project experience, but
             also by long-term exposure to how international education partnerships develop within
@@ -74,8 +89,8 @@ defineOptions({
   padding: 104px 24px;
   background:
     linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
-    url('@/assets/cool-background-inside-building-with-metal-textures.jpg') center center/cover
-      no-repeat;
+    url('https://res.cloudinary.com/dzk8mhglj/image/upload/q_auto/f_auto/v1778297108/cool-background-inside-building-with-metal-textures_l7sxfc.jpg')
+      center center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -120,6 +135,7 @@ defineOptions({
   //   border: 1px solid rgb(255 255 255 / 14%);
   // border-radius: 12px;
   background: rgb(255 255 255 / 4%);
+  backdrop-filter: blur(10px);
 
   p {
     margin: 0;

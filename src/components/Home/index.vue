@@ -33,7 +33,7 @@ defineOptions({
     <div id="about">
       <About />
     </div>
-    <div id="about">
+    <div id="Schools">
       <Schools />
     </div>
     <div id="contact">

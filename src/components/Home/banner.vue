@@ -15,7 +15,7 @@ const menuItems = [
   { label: 'Our Work', href: '#work' },
   { label: 'How We Work', href: '#how' },
   { label: 'About', href: '#about' },
-  { label: 'Schools', href: '#about' },
+  { label: 'Schools', href: '#Schools' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -63,15 +63,22 @@ onUnmounted(() => {
     </header>
 
     <div class="banner-content">
-      <h1 class="banner-content-title" data-aos="fade-right" data-aos-delay="10">KISC</h1>
-      <h1 class="sub-title" data-aos="fade-right" data-aos-delay="30">
+      <h1
+        class="banner-content-title"
+        data-aos="fade-right"
+        data-aos-once="true"
+        data-aos-delay="10"
+      >
+        KISC
+      </h1>
+      <h1 class="sub-title" data-aos="fade-right" data-aos-once="true" data-aos-delay="30">
         International School Collaboration
       </h1>
       <div class="sub-content-box">
-        <h3 class="slogan" data-aos="fade-right" data-aos-delay="60">
+        <h3 class="slogan" data-aos="fade-right" data-aos-once="true" data-aos-delay="60">
           A trusted bridge between UK independent schools and Asia
         </h3>
-        <p data-aos="fade-right" data-aos-delay="100">
+        <p data-aos="fade-right" data-aos-once="true" data-aos-delay="100">
           Most schools explore international opportunities, but meaningful and sustainable
           engagement requires more than broad connections alone. We focus on ensuring that the right
           opportunities are pursued, supporting schools in developing well-aligned and long-term
