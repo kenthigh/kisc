@@ -189,5 +189,10 @@ defineOptions({
   .why-item > div {
     width: 86%;
   }
+  /* 第3和第4项右侧加边框 */
+.why-item:nth-child(1),
+.why-item:nth-child(2) {
+  padding: 40px 24px 50px 24px;
+}
 }
 </style>

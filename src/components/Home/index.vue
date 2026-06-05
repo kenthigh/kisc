@@ -7,6 +7,7 @@ import How from './how.vue'
 import About from './about.vue'
 import Schools from './schools.vue'
 import Contact from './contact.vue'
+import Insights from './insights.vue'
 
 defineOptions({
   name: 'HomeSection',
@@ -30,12 +31,15 @@ defineOptions({
     <div id="how">
       <How />
     </div>
+    <div id="insights">
+      <Insights />
+    </div>
     <div id="about">
       <About />
     </div>
-    <div id="Schools">
+    <div id="Engagement">
       <Schools />
-    </div>
+    </div> 
     <div id="contact">
       <Contact />
     </div>

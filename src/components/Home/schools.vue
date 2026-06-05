@@ -4,13 +4,12 @@ defineOptions({
 })
 
 const schools = [
-  'Mount Kelly',
-  'Austin Friars',
-  'Benenden School',
-  'Shiplake College',
-  'Tettenhall College',
-  'Orwell Park',
-  'Holmewood House',
+  'UK Independent Schools',
+  'International Partnerships',
+  'Student Immersion Programmes',
+  'Institutional Collaboration',
+  'Market Development',
+  'Long-Term Relationship Building',
 ]
 
 const intro = [
@@ -23,11 +22,11 @@ const intro = [
   <section class="schools">
     <div class="schools-inner">
       <aside class="schools-intro">
-        <p class="eyebrow" data-aos="fade-up" data-aos-once="true">Our Network</p>
+        <p class="eyebrow" data-aos="fade-up" data-aos-once="true">Areas of Engagement</p>
         <h2 data-aos="fade-up" data-aos-delay="50" data-aos-once="true">
-          Selected schools. Long-term relationships.
+          KISC supports schools through carefully selected opportunities, informed decision-making, and sustainable partnership development across the UK and Asia.
         </h2>
-        <p
+        <!-- <p
           v-for="(item, index) in intro"
           :key="index"
           class="lead"
@@ -36,7 +35,7 @@ const intro = [
           :data-aos-delay="90"
         >
           {{ item }}
-        </p>
+        </p> -->
       </aside>
 
       <div class="schools-list">
@@ -47,7 +46,7 @@ const intro = [
           data-aos="fade-down"
           data-aos-once="true"
         >
-          <span class="school-index">{{ String(index + 1).padStart(2, '0') }}</span>
+          <span class="school-index"></span>
           <h3>{{ school }}</h3>
         </article>
       </div>
@@ -62,10 +61,10 @@ const intro = [
 }
 
 .schools-inner {
-  width: min(1120px, 100%);
+  width: min(1240px, 100%);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.4fr);
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.5fr);
   gap: 48px;
 }
 

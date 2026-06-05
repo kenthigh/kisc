@@ -71,12 +71,13 @@ defineOptions({
           data-aos-delay="190"
         >
           <p>
-            Our understanding of the China market is informed not only by project experience, but
-            also by long-term exposure to how international education partnerships develop within
-            local regulatory and policy contexts.
+            Our understanding of international education markets is informed not only by project experience, but also by long-term exposure to how educational partnerships develop within local educational, regulatory, and policy environments.
             <br />
-            This allows us to approach engagement with a clearer sense of what is viable,
-            appropriate, and sustainable over time.
+            We recognise that successful international engagement requires not only strong relationships, but also a clear understanding of local educational priorities, regulatory frameworks, and long-term institutional objectives.
+            <br />
+            While China remains one of the most significant international education markets, similar principles apply across Asia. Japan, Hong Kong, South Korea and Southeast Asian markets each operate within their own educational cultures, regulatory environments and institutional expectations.
+            <br />
+            This enables us to approach engagement with a clearer understanding of what is realistic, appropriate, and sustainable over time.
           </p>
         </article>
       </div>
@@ -95,7 +96,7 @@ defineOptions({
 }
 
 .about-inner {
-  width: min(1160px, 100%);
+  width: min(1240px, 100%);
   margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.5fr);

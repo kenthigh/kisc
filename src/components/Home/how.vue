@@ -55,15 +55,16 @@ const steps = [
 
 <style scoped lang="scss">
 .how {
-  padding: 96px 24px;
+  padding: 200px 24px 96px 24px;
   background: linear-gradient(180deg, #f5f8ff 0%, #fff 100%);
+  background-color: #f4f7ff;
 }
 
 .how-inner {
-  width: min(1120px, 100%);
+  width: min(1240px, 100%);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.4fr);
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.5fr);
   gap: 48px;
 }
 

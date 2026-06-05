@@ -12,10 +12,11 @@ const menuItems = [
   { label: 'Home', href: '#home' },
   { label: 'Why KISC', href: '#why' },
   { label: 'What We Offer', href: '#offer' },
-  { label: 'Our Work', href: '#work' },
+  { label: 'What We Do', href: '#work' },
   { label: 'How We Work', href: '#how' },
+  { label: 'Insights', href: '#insights' },
   { label: 'About', href: '#about' },
-  { label: 'Schools', href: '#Schools' },
+  { label: 'Engagement', href: '#Engagement' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -46,12 +47,7 @@ onUnmounted(() => {
     <header class="banner-header">
       <a class="logo" href="#home" aria-label="KISC 首页"> KISC </a>
 
-      <button
-        class="menu-toggle"
-        type="button"
-        :aria-expanded="menuOpen"
-        @click="menuOpen = !menuOpen"
-      >
+      <button class="menu-toggle" type="button" :aria-expanded="menuOpen" @click="menuOpen = !menuOpen">
         ☰
       </button>
 
@@ -63,26 +59,27 @@ onUnmounted(() => {
     </header>
 
     <div class="banner-content">
-      <h1
-        class="banner-content-title"
-        data-aos="fade-right"
-        data-aos-once="true"
-        data-aos-delay="10"
-      >
+      <h1 class="banner-content-title" data-aos="fade-right" data-aos-once="true" data-aos-delay="10">
         KISC
       </h1>
       <h1 class="sub-title" data-aos="fade-right" data-aos-once="true" data-aos-delay="30">
         International School Collaboration
       </h1>
       <div class="sub-content-box">
-        <h3 class="slogan" data-aos="fade-right" data-aos-once="true" data-aos-delay="60">
-          A trusted bridge between UK independent schools and Asia
-        </h3>
+        <div class="slogan-row">
+          <h3 class="slogan" data-aos="fade-right" data-aos-once="true" data-aos-delay="60">
+            A trusted bridge between UK independent schools and Asia
+          </h3>
+          <span class="slogan-divider" aria-hidden="true"></span>
+          <h2 class="slogan" data-aos="fade-right" data-aos-once="true" data-aos-delay="100">
+            Most schools explore international opportunities. We focus on ensuring the right ones are pursued.
+          </h2>
+        </div>
         <p data-aos="fade-right" data-aos-once="true" data-aos-delay="100">
-          Most schools explore international opportunities, but meaningful and sustainable
-          engagement requires more than broad connections alone. We focus on ensuring that the right
-          opportunities are pursued, supporting schools in developing well-aligned and long-term
-          partnerships, particularly within the China market.
+          Meaningful and sustainable international engagement requires more than broad connections alone.
+          <br>
+          KISC supports schools in developing well-aligned partnerships, identifying appropriate opportunities, and
+          building long-term relationships across Asia, particularly within the China market.
         </p>
       </div>
       <div class="email-btn-box">
@@ -94,12 +91,7 @@ onUnmounted(() => {
 
     <img
       src="https://res.cloudinary.com/dzk8mhglj/image/upload/c_fill,w_2400,h_1600/v1778307485/city-business-buildings-near-each-other_zo1odf.jpg"
-      alt="Banner Background"
-      aria-hidden="true"
-      draggable="false"
-      class="bg-img"
-      :style="imageStyle"
-    />
+      alt="Banner Background" aria-hidden="true" draggable="false" class="bg-img" :style="imageStyle" />
   </section>
 </template>
 
@@ -125,6 +117,7 @@ onUnmounted(() => {
   transition:
     background 0.2s,
     color 0.2s;
+
   &:hover {
     background: var(--main-color);
     color: #fff;
@@ -144,12 +137,10 @@ onUnmounted(() => {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      180deg,
-      rgb(0 0 0 / 60%) 0%,
-      rgb(0 0 0 / 50%) 36%,
-      rgb(0 0 0 / 55%) 100%
-    );
+    background: linear-gradient(180deg,
+        rgb(0 0 0 / 60%) 0%,
+        rgb(0 0 0 / 50%) 36%,
+        rgb(0 0 0 / 55%) 100%);
     z-index: 1;
     pointer-events: none;
   }
@@ -229,17 +220,18 @@ onUnmounted(() => {
 }
 
 .sub-content-box {
-  width: 70%;
+  width: 80%;
 }
 
 .banner-content {
   .sub-title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: clamp(30px, 4.5vw, 60px);
   }
 
   .banner-content-title {
     display: inline-block;
+
     &::before {
       content: '';
       position: absolute;
@@ -250,9 +242,25 @@ onUnmounted(() => {
     }
   }
 
+  .slogan-row {
+    display: grid;
+    grid-template-columns: 4fr 1px 6fr;
+    column-gap: clamp(20px, 3vw, 31px);
+    align-items: stretch;
+    margin-bottom: 86px;
+  }
+
+  .slogan-divider {
+    width: 1px;
+    min-height: 100%;
+    background: rgb(255 255 255 / 45%);
+  }
+
   .slogan {
-    font-size: clamp(24px, 3vw, 40px);
-    margin-bottom: 10px;
+    min-width: 0;
+    font-size: clamp(20px, 3vw, 38px);
+    margin: 0;
+    line-height: 1.15;
   }
 
   h1 {
@@ -322,6 +330,22 @@ onUnmounted(() => {
     .sub-title {
       margin-bottom: 20px;
     }
+
+    .slogan-row {
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+      margin-bottom: 46px;
+    }
+
+    .slogan-divider {
+      width: 100%;
+      height: 1px;
+      min-height: 0;
+    }
+  }
+
+  .sub-content-box {
+    width: 90%;
   }
 }
 </style>

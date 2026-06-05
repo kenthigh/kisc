@@ -31,7 +31,7 @@ onUnmounted(() => {
     <div class="offer-mask">
       <div class="offer-shell">
         <div class="offer-copy">
-          <p class="offer-eyebrow" data-aos="fade-up" data-aos-once="true">Our Work</p>
+          <p class="offer-eyebrow" data-aos="fade-up" data-aos-once="true">WHAT WE DO</p>
           <h2 class="offer-title" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
             Structured, long-term engagement built with care and clarity.
           </h2>
