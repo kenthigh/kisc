@@ -1,10 +1,89 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { ref } from 'vue'
 
 defineOptions({
-  name: 'HomeWork',
+  name: 'Perspectives',
 })
 
+const expandedArticles = ref<Record<string, boolean>>({})
+
+const toggleArticle = (article: string) => {
+  expandedArticles.value[article] = !expandedArticles.value[article]
+}
+
+const articles = [
+  {
+    id: 'outstanding-schools',
+    title: "Outstanding Schools Don't Automatically Become Internationally Successful",
+    subtitle: 'Educational excellence and international success are not the same thing.',
+    body: [
+      `British independent schools have every reason to be proud of what they do.`,
+      `Their academic standards, pastoral care, traditions and co-curricular opportunities are among the strongest in the world. Every year I visit schools that genuinely provide outstanding education, led by dedicated Heads and exceptional staff.`,
+      `Yet one question continues to come back.`,
+      `Why do some excellent schools build a strong international presence while others, equally good, remain largely unknown outside the UK?`,
+      `The answer is rarely educational quality.`,
+      `More often, it is positioning.`,
+      `---`,
+      `Schools naturally describe themselves through what they provide.`,
+      `GCSE results.`,
+      `A Levels.`,
+      `Boarding.`,
+      `Music.`,
+      `Sport.`,
+      `Outdoor education.`,
+      `Pastoral care.`,
+      `All of these matter.`,
+      `But international families do not begin by asking what a school offers.`,
+      `They begin by asking what kind of future the school can offer their child.`,
+      `Those are very different conversations.`,
+      `---`,
+      `Over the past nineteen years, I have spent much of my professional life working between British independent schools and families across Asia.`,
+      `One observation has remained remarkably consistent.`,
+      `Schools usually explain themselves.`,
+      `Families imagine themselves.`,
+      `A school talks about its facilities.`,
+      `A family imagines confidence.`,
+      `A school talks about outdoor education.`,
+      `A parent imagines independence.`,
+      `A school talks about rowing, swimming or drama.`,
+      `A family imagines their son or daughter becoming a different person.`,
+      `The educational product has not changed.`,
+      `The perspective has.`,
+      `---`,
+      `This is why outstanding education does not automatically become international success.`,
+      `International markets cannot value what they do not yet understand.`,
+      `Educational excellence needs to be translated into language that overseas families immediately recognise as meaningful.`,
+      `That does not mean changing the school.`,
+      `Nor does it mean simplifying educational philosophy.`,
+      `It means explaining educational value through the lens of the people making the decision.`,
+      `---`,
+      `The same principle applies beyond recruitment.`,
+      `Increasingly, British independent schools are exploring international partnerships, overseas programmes and long-term strategic opportunities.`,
+      `These decisions should not begin with the question:`,
+      `"Which market should we enter?"`,
+      `Instead, they should begin with another question:`,
+      `"What makes our school genuinely distinctive, and why should that matter internationally?"`,
+      `Until that question is answered clearly, every market will be difficult.`,
+      `---`,
+      `One of the greatest strengths of British independent education is that every school possesses its own identity.`,
+      `Some schools are recognised for academic scholarship.`,
+      `Others for pastoral care.`,
+      `Some have exceptional sporting traditions.`,
+      `Others have developed distinctive expertise in outdoor learning, music, leadership or boarding.`,
+      `Those strengths already exist.`,
+      `The challenge is not creating them.`,
+      `The challenge is helping the right people understand them.`,
+      `---`,
+      `International development should never begin with promotion.`,
+      `It should begin with identity.`,
+      `Only when a school understands its own distinctive value can others recognise it as well.`,
+      `Outstanding education deserves to be recognised.`,
+      `But recognition rarely happens by itself.`,
+      `It requires thoughtful positioning, trusted relationships and a long-term strategy built upon the school's genuine identity rather than short-term market trends.`,
+      `That is where sustainable international development begins.`,
+    ],
+  },
+]
 </script>
 
 <template>
@@ -12,156 +91,50 @@ defineOptions({
     <div class="offer-mask">
       <div class="offer-shell">
         <aside class="offer-copy">
-          <p class="offer-eyebrow" data-aos="fade-up" data-aos-once="true">insights</p>
+          <p class="offer-eyebrow" data-aos="fade-up" data-aos-once="true">Perspectives</p>
           <h2 class="offer-title" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-            Perspectives from practice across UK–Asia education engagement.
+            Practical perspectives on leadership, international strategy and institutional development across British independent education.
           </h2>
-          <p class="offer-intro" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-            The articles below reflect observations developed through years of experience working with schools,
-            institutions and education partners across the United Kingdom and Asia.
-            <br />
-            They are not intended as market reports or academic research.
-            <br />
-            Rather, they represent practical reflections on how international engagement, partnership development and
-            educational collaboration evolve in real-world settings.
-          </p>
         </aside>
 
         <div class="offer-layout">
           <div class="offer-list">
-            <article class="offer-item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+            <article
+              v-for="article in articles"
+              :key="article.id"
+              class="offer-item"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-once="true"
+            >
               <span class="offer-item-index" aria-hidden="true"></span>
               <div class="offer-item-copy">
-                <h3>WHY MANY CONVERSATIONS NEVER BECOME PARTNERSHIPS</h3>
-                <p>
-                  One of the most common assumptions in international education is that more conversations naturally
-                  lead to more partnerships.
-                  <br />
-                  In practice, this is rarely the case.
-                  <br />
-                  Over the years, schools have invested significant time and resources in exhibitions, conferences,
-                  school visits and partnership discussions. Many of these interactions begin with genuine enthusiasm
-                  and positive intentions.
-                  <br />
-                  Yet only a small number develop into long-term and meaningful collaboration.
-                  <br />
-                  The reason is rarely a lack of interest.
-                  <br />
-                  More often, it is a lack of alignment.
-                  <br />
-                  Schools frequently believe they are discussing the same opportunity when, in reality, they are
-                  pursuing very different objectives.
-                  <br />
-                  A British school may be focused on educational exchange, cultural enrichment and long-term
-                  relationship building.
-                  <br />
-                  Its counterpart may be focused on recruitment, branding, examination outcomes or local policy
-                  priorities.
-                  <br />
-                  Both sides leave the meeting encouraged.
-                  <br />
-                  Neither side fully realises they are moving in different directions.
-                  <br />
-                  The challenge therefore is not creating conversations.
-                  <br />
-                  The challenge is identifying which conversations are worth continuing.
-                  <br />
-                  Successful partnerships are rarely built on enthusiasm alone.
-                  <br />
-                  They are built on shared expectations, compatible objectives and a willingness to invest time in
-                  understanding one another.
-                  <br />
-                  The schools that achieve sustainable international engagement are often not those with the largest
-                  number of contacts.
-                  <br />
-                  They are the schools that are most selective about where they invest their attention.
-                </p>
+                <h3>{{ article.title }}</h3>
+                <p class="article-subtitle">{{ article.subtitle }}</p>
+                <div
+                  class="article-body"
+                  :class="{ expanded: expandedArticles[article.id] }"
+                  :id="`perspective-${article.id}`"
+                >
+                  <p
+                    v-for="paragraph in article.body"
+                    :key="paragraph"
+                    :class="{ divider: paragraph === '---' }"
+                  >
+                    {{ paragraph }}
+                  </p>
+                </div>
+                <button
+                  class="read-toggle"
+                  type="button"
+                  :aria-expanded="Boolean(expandedArticles[article.id])"
+                  :aria-controls="`perspective-${article.id}`"
+                  @click="toggleArticle(article.id)"
+                >
+                  {{ expandedArticles[article.id] ? 'Read less' : 'Read more' }}
+                </button>
               </div>
             </article>
-
-            <article class="offer-item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
-              <span class="offer-item-index" aria-hidden="true"></span>
-              <div class="offer-item-copy">
-                <h3>THE MARKET IS NOT DISAPPEARING. IT IS GROWING UP.</h3>
-                <p>
-                  A question increasingly raised by schools is whether demand for international education is
-                  declining.<br />
-                  The answer may be more nuanced than it first appears.<br />
-                  Demand is not disappearing.<br />
-                  The market is maturing.<br />
-                  Ten years ago, many families approached international education with a relatively simple
-                  question:<br />
-                  "Is it a British school?"<br />
-                  For a significant number of families, the answer alone carried considerable weight.<br />
-                  Today, the questions are different.<br />
-                  Why this school?<br />
-                  Why this country?<br />
-                  Why the UK rather than Hong Kong?<br />
-                  Why the UK rather than Singapore?<br />
-                  Why the UK rather than a local international school?<br />
-                  Families are becoming more informed, more selective and more thoughtful in their
-                  decision-making.<br />
-                  This shift is sometimes interpreted as declining demand.<br />
-                  It may be more accurately understood as increasing sophistication.<br />
-                  A mature market does not buy less.<br />
-                  A mature market buys more carefully.<br />
-                  As families become more selective, reputation becomes more important.<br />
-                  Identity becomes more important.<br />
-                  Trust becomes more important.<br />
-                  Schools that understand clearly who they are and who they serve are likely to remain attractive.<br />
-                  Schools that attempt to be everything to everyone may find the market increasingly difficult.<br />
-                  The greatest risk is not declining demand.<br />
-                  The greatest risk is losing clarity about a school's identity.<br />
-                  In a market with more choice than ever before, families increasingly choose schools that know exactly
-                  what they stand for.<br />
-                </p>
-              </div>
-            </article>
-
-            <article class="offer-item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
-              <span class="offer-item-index" aria-hidden="true"></span>
-              <div class="offer-item-copy">
-                <h3>WHAT FAMILIES ARE REALLY BUYING</h3>
-                <p>
-                  When discussing international education, schools often focus on curriculum, examination results and
-                  university destinations.<br />
-                  <br />
-                  These factors remain important.<br />
-                  However, they are rarely the whole story.<br />
-                  Many families are not simply purchasing an academic programme.<br />
-                  They are purchasing an environment.<br />
-                  They are purchasing language immersion.<br />
-                  They are purchasing independence.<br />
-                  They are purchasing friendships.<br />
-                  They are purchasing cultural understanding.<br />
-                  Most importantly, they are purchasing experiences that cannot easily be replicated at home.<br />
-                  <br />
-                  This is one reason why the growth of British schools in Asia does not automatically mean the decline
-                  of British schools in the United Kingdom.<br />
-                  In many cases, these institutions are offering different products.<br />
-                  A family choosing a British-branded school in Asia may be seeking academic continuity while remaining
-                  close to home.<br />
-                  A family choosing a British school in the UK is often seeking something much broader.<br />
-                  They are seeking immersion in a different society, different relationships and different ways of
-                  living.<br />
-                  The distinction matters.<br />
-                  Because it changes how schools should describe themselves.<br />
-                  Many schools compete by talking about prestige.<br />
-                  Others compete by talking about examination results.<br />
-                  Increasingly, families are asking different questions.<br />
-                  Will my child be known?<br />
-                  Will my child be supported?<br />
-                  Will my child grow in confidence?<br />
-                  Will this school help my child become the best version of themselves?<br />
-                  These questions are not replacing academic ambition.<br />
-                  But they are becoming a larger part of the conversation.<br />
-                  For schools, understanding what families are truly buying may be one of the most important questions
-                  of all.<br />
-                </p>
-
-              </div>
-            </article>
-
           </div>
         </div>
       </div>
@@ -178,7 +151,6 @@ defineOptions({
   color: #10131a;
   padding: 100px 24px;
 }
-
 
 .offer-shell {
   width: min(1240px, 100%);
@@ -212,23 +184,7 @@ defineOptions({
   letter-spacing: -0.02em;
 }
 
-.offer-intro {
-  margin: 24px 0 0;
-  max-width: 700px;
-  color: #10131a;
-  font-size: clamp(17px, 1.45vw, 22px);
-  line-height: 1.82;
-  font-weight: 300;
-}
-
-.offer-layout {
-  display: grid;
-  /* 这里定义两列布局，第一列的宽度最小为0，占1.55比例，第二列最小为260px，占0.7比例 */
-  /* grid-template-columns: minmax(0, 1.55fr) minmax(260px, 0.7fr); */
-  gap: 32px;
-  align-items: start;
-}
-
+.offer-layout,
 .offer-list {
   display: grid;
   gap: 20px;
@@ -259,7 +215,41 @@ defineOptions({
   line-height: 1.3;
 }
 
-.offer-item-copy p {
+.article-subtitle {
+  margin: 0 0 18px;
+  color: #3f4c68;
+  font-size: clamp(16px, 1.2vw, 19px);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.article-body {
+  position: relative;
+  max-height: 9.6em;
+  overflow: hidden;
+  transition: max-height 0.28s ease;
+}
+
+.article-body::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 4.8em;
+  background: linear-gradient(180deg, rgb(255 255 255 / 0%), #fff 82%);
+  pointer-events: none;
+}
+
+.article-body.expanded {
+  max-height: 3200px;
+}
+
+.article-body.expanded::after {
+  display: none;
+}
+
+.article-body p {
   margin: 0;
   color: #10131a;
   font-size: clamp(14px, 1.05vw, 16px);
@@ -267,51 +257,37 @@ defineOptions({
   font-weight: 300;
 }
 
-.offer-item-copy p+p {
+.article-body p + p {
   margin-top: 12px;
 }
 
-.offer-note {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 22px;
-  min-height: 100%;
-  padding: 12px 4px 12px 20px;
-}
-
-.offer-note-line {
-  width: 64px;
+.article-body p.divider {
+  width: 76px;
   height: 1px;
+  margin: 28px 0;
+  overflow: hidden;
+  color: transparent;
   background: var(--main-color);
 }
 
-.offer-note p {
-  margin: 0;
-  max-width: 320px;
-  color: #10131a;
-  font-size: clamp(20px, 1.7vw, 30px);
-  line-height: 1.55;
-  font-weight: 300;
+.read-toggle {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 16px;
+  padding: 8px 0;
+  border: 0;
+  background: transparent;
+  color: #4c71df;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.2;
+  cursor: pointer;
+  touch-action: manipulation;
 }
 
-@media (max-width: 1180px) {
-  .offer-mask {
-    padding: 88px 24px;
-  }
-
-  .offer-layout {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
-  .offer-note {
-    padding: 0;
-  }
-
-  .offer-note p {
-    max-width: none;
-  }
+.read-toggle:focus-visible {
+  outline: 2px solid #4c71df;
+  outline-offset: 4px;
 }
 
 @media (max-width: 980px) {
@@ -325,22 +301,11 @@ defineOptions({
   }
 }
 
-@media (max-width: 900px) {
-  .offer-list {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media (max-width: 820px) {
-
   .offer,
   .offer-mask {
     min-height: auto;
   }
-
-  /* .offer {
-    background-attachment: scroll;
-  } */
 
   .offer-mask {
     padding: 72px 20px;
@@ -351,27 +316,12 @@ defineOptions({
     line-height: 1.12;
   }
 
-  .offer-intro {
-    margin-top: 18px;
-    font-size: 16px;
-    line-height: 1.75;
-  }
-
   .offer-item {
     padding: 24px 22px;
   }
 
   .offer-item-copy h3 {
     font-size: 20px;
-  }
-
-  .offer-note {
-    gap: 16px;
-  }
-
-  .offer-note p {
-    font-size: 18px;
-    line-height: 1.7;
   }
 }
 
@@ -395,13 +345,22 @@ defineOptions({
     font-size: 18px;
   }
 
-  .offer-item-copy p {
+  .article-body {
+    max-height: 8.75em;
+  }
+
+  .article-body p {
     font-size: 14px;
     line-height: 1.75;
   }
 
+  .read-toggle {
+    min-height: 44px;
+    font-size: 14px;
+  }
+
   .offer {
-    padding: 0px 24px;
+    padding: 0 24px;
   }
 }
 </style>

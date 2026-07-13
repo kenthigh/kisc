@@ -63,6 +63,39 @@ defineOptions({
                   </p>
                 </div>
               </li>
+              <li data-aos="fade-down" data-aos-once="true" data-aos-delay="320">
+                <span class="offer-index" aria-hidden="true"></span>
+                <div class="offer-item-copy">
+                  <h3>Beyond International Recruitment</h3>
+                  <p>
+                    International development creates opportunities beyond student recruitment.
+                  </p>
+                  <p>These may include:</p>
+                  <ul class="offer-sublist">
+                    <li>Programme expansion</li>
+                    <li>Institutional partnerships</li>
+                    <li>Cross-border educational projects</li>
+                    <li>Overseas development</li>
+                    <li>Strategic development opportunities</li>
+                    <li>Trusted development and investment connections</li>
+                  </ul>
+                  <p>
+                    KISC helps schools evaluate these opportunities from an educational,
+                    reputational and long-term institutional perspective.
+                  </p>
+                </div>
+              </li>
+              <li data-aos="fade-down" data-aos-once="true" data-aos-delay="360">
+                <span class="offer-index" aria-hidden="true"></span>
+                <div class="offer-item-copy">
+                  <h3>Executive Strategic Advisory</h3>
+                  <p>
+                    Working directly with Heads, Governors and senior leadership teams, KISC
+                    provides strategic advice on international positioning, institutional
+                    partnerships, programme development and long-term international growth.
+                  </p>
+                </div>
+              </li>
             </ul>
           </div>
 
@@ -192,6 +225,29 @@ defineOptions({
   font-size: clamp(14px, 1.05vw, 16px);
   line-height: 1.85;
   font-weight: 300;
+}
+
+.offer-item-copy p + p,
+.offer-sublist + p {
+  margin-top: 12px;
+}
+
+.offer-sublist {
+  display: grid;
+  gap: 6px;
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.offer-sublist li {
+  display: list-item;
+  padding: 0;
+  border-bottom: 0;
+  color: rgb(255 255 255 / 72%);
+  font-size: clamp(14px, 1.05vw, 16px);
+  line-height: 1.65;
+  font-weight: 300;
+  list-style: disc;
 }
 
 .offer-note {

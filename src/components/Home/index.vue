@@ -4,6 +4,7 @@ import Why from './why.vue'
 import Offer from './offer.vue'
 import Work from './work.vue'
 import How from './how.vue'
+import StrategicGrowth from './strategic-growth.vue'
 import About from './about.vue'
 import Schools from './schools.vue'
 import Contact from './contact.vue'
@@ -31,7 +32,10 @@ defineOptions({
     <div id="how">
       <How />
     </div>
-    <div id="insights">
+    <div id="strategic-growth">
+      <StrategicGrowth />
+    </div>
+    <div id="Perspectives">
       <Insights />
     </div>
     <div id="about">

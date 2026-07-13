@@ -2,82 +2,47 @@
 defineOptions({
   name: 'HomeAbout',
 })
+
+const storyParagraphs = [
+  `KISC did not begin as a consultancy.`,
+  `It evolved naturally from nearly two decades of practical work through KK Tiger International.`,
+  `Over the years, Harold and his team have worked alongside British independent schools across Asia through student pathways, immersion programmes, institutional partnerships and long-term educational collaboration.`,
+  `As schools increasingly sought strategic advice beyond recruitment, KISC was established as the natural evolution of that experience.`,
+  `Today KISC supports schools in building sustainable international growth through strategy, reputation, partnerships and institutional development.`,
+]
+
+const haroldParagraphs = [
+  `Harold has over 19 years' experience working between the UK and Asia and supports British independent schools in building sustainable long-term opportunities across the Asia-Pacific region.`,
+  `Alongside his work through KISC, Harold serves within the leadership team of Austin Friars, a British independent school, giving him current first-hand insight into the opportunities and challenges facing schools from both an operational and strategic perspective.`,
+  `Working with his team, he advises on international strategy, market positioning, brand and reputation development, strategic partnerships, institutional collaboration and the design of sustainable international programmes.`,
+  `His work increasingly includes supporting schools with broader strategic initiatives, including cross-border educational projects and introducing schools to trusted development and investment partners where appropriate.`,
+  `His approach is centred on helping schools build a meaningful and sustainable presence across Asia through clear strategy, strong reputation and carefully aligned partnerships, with student recruitment viewed as the outcome of long-term institutional development rather than the starting point.`,
+]
 </script>
 
 <template>
   <section class="about">
     <div class="about-inner">
       <aside class="about-side">
-        <p class="eyebrow" data-aos="fade-up" data-aos-once="true">About KISC</p>
+        <p class="eyebrow" data-aos="fade-up" data-aos-once="true">Our Story</p>
         <h2 data-aos="fade-up" data-aos-once="true" data-aos-delay="40">
-          Built on trusted UK-Asia relationships and sustained educational collaboration.
+          Built from long practical experience between British independent schools and Asia.
         </h2>
       </aside>
 
       <div class="about-body">
-        <article class="about-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="70">
-          <p>
-            KISC is a UK–Asia education engagement platform built on long-term relationships across
-            independent schools and international partners.
+        <article class="story-block" data-aos="fade-up" data-aos-once="true" data-aos-delay="70">
+          <p v-for="paragraph in storyParagraphs" :key="paragraph">
+            {{ paragraph }}
           </p>
         </article>
 
-        <article class="about-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-          <p>
-            Our work is shaped by practical experience within both the UK independent school sector
-            and the Asia education landscape.
-          </p>
-        </article>
+        <div class="story-divider" aria-hidden="true"></div>
 
-        <article class="about-card" data-aos="fade-up" data-aos-once="true" data-aos-delay="130">
-          <p>
-            We support schools in making informed and well-aligned decisions when engaging with
-            international markets, helping them identify appropriate partners and develop
-            sustainable forms of collaboration.
-          </p>
-        </article>
-
-        <blockquote
-          class="about-quote"
-          data-aos="fade-up"
-          data-aos-once="true"
-          data-aos-delay="160"
-        >
-          Rather than focusing on the volume of activity, we place emphasis on careful selection,
-          cultural understanding, and long-term development.
-          <br />
-          <br />
-          Our work focuses on identifying which partnerships are most likely to succeed, rather than
-          simply increasing the number of connections.
-        </blockquote>
-
-        <article
-          class="about-card about-card--strong"
-          data-aos="fade-up"
-          data-aos-once="true"
-          data-aos-delay="190"
-        >
-          <p>
-            Our approach has evolved over time through ongoing collaboration, developing into a
-            structured model that continues to operate through an established network of schools and
-            partners.
-          </p>
-        </article>
-
-        <article
-          class="about-card about-card--strong"
-          data-aos="fade-up"
-          data-aos-once="true"
-          data-aos-delay="190"
-        >
-          <p>
-            Our understanding of international education markets is informed not only by project experience, but also by long-term exposure to how educational partnerships develop within local educational, regulatory, and policy environments.
-            <br />
-            We recognise that successful international engagement requires not only strong relationships, but also a clear understanding of local educational priorities, regulatory frameworks, and long-term institutional objectives.
-            <br />
-            While China remains one of the most significant international education markets, similar principles apply across Asia. Japan, Hong Kong, South Korea and Southeast Asian markets each operate within their own educational cultures, regulatory environments and institutional expectations.
-            <br />
-            This enables us to approach engagement with a clearer understanding of what is realistic, appropriate, and sustainable over time.
+        <article class="story-block" data-aos="fade-up" data-aos-once="true" data-aos-delay="110">
+          <h3>Harold</h3>
+          <p v-for="paragraph in haroldParagraphs" :key="paragraph">
+            {{ paragraph }}
           </p>
         </article>
       </div>
@@ -87,9 +52,9 @@ defineOptions({
 
 <style scoped lang="scss">
 .about {
-  padding: 104px 24px;
+  padding: 112px 24px;
   background:
-    linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.9)),
     url('https://res.cloudinary.com/dzk8mhglj/image/upload/c_fill,w_2400,h_1600/v1778297108/cool-background-inside-building-with-metal-textures_l7sxfc.jpg')
       center center/cover no-repeat;
   background-attachment: fixed;
@@ -100,7 +65,7 @@ defineOptions({
   margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.5fr);
-  gap: 44px;
+  gap: 56px;
 }
 
 .about-side {
@@ -110,8 +75,7 @@ defineOptions({
 }
 
 .eyebrow {
-  margin: 0 0 12px;
-  // color: #7aa2ff;
+  margin: 0 0 14px;
   color: var(--main-color);
   font-size: 13px;
   font-weight: 700;
@@ -128,37 +92,34 @@ defineOptions({
 
 .about-body {
   display: grid;
-  gap: 14px;
+  gap: 42px;
 }
 
-.about-card {
-  padding: 22px 24px;
-  //   border: 1px solid rgb(255 255 255 / 14%);
-  // border-radius: 12px;
-  background: rgb(255 255 255 / 4%);
-  backdrop-filter: blur(10px);
-
-  p {
-    margin: 0;
-    color: #e5e7eb;
-    font-size: clamp(15px, 1.35vw, 19px);
-    line-height: 1.78;
-  }
+.story-block {
+  display: grid;
+  gap: 16px;
+  max-width: 820px;
 }
 
-.about-quote {
-  margin: 2px 0;
-  padding: 14px 4px 14px 18px;
-  border-left: 1px solid #7aa2ff;
-  color: #dbeafe;
-  font-size: clamp(17px, 1.6vw, 23px);
-  font-style: italic;
-  line-height: 1.7;
+.story-block p {
+  margin: 0;
+  color: #e5e7eb;
+  font-size: clamp(16px, 1.35vw, 19px);
+  line-height: 1.82;
+  font-weight: 300;
 }
 
-.about-card--strong {
-  border-color: rgba(53, 54, 55, 0.55);
-  background: rgba(94, 95, 96, 0.1);
+.story-block h3 {
+  margin: 0 0 4px;
+  color: #f9fafb;
+  font-size: clamp(24px, 2.2vw, 34px);
+  line-height: 1.2;
+}
+
+.story-divider {
+  width: 76px;
+  height: 1px;
+  background: var(--main-color);
 }
 
 @media (max-width: 980px) {
@@ -168,7 +129,7 @@ defineOptions({
 
   .about-inner {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 30px;
   }
 
   .about-side {
@@ -179,14 +140,20 @@ defineOptions({
 @media (max-width: 640px) {
   .about {
     padding: 58px 16px;
+    background-attachment: scroll;
   }
 
-  .about-card {
-    padding: 16px;
+  .about-body {
+    gap: 32px;
   }
 
-  .about-quote {
-    padding-left: 12px;
+  .story-block {
+    gap: 14px;
+  }
+
+  .story-block p {
+    font-size: 15px;
+    line-height: 1.76;
   }
 }
 </style>

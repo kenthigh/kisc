@@ -14,8 +14,9 @@ const menuItems = [
   { label: 'What We Offer', href: '#offer' },
   { label: 'What We Do', href: '#work' },
   { label: 'How We Work', href: '#how' },
-  { label: 'Insights', href: '#insights' },
-  { label: 'About', href: '#about' },
+  { label: 'Strategic Growth', href: '#strategic-growth' },
+  { label: 'Perspectives', href: '#Perspectives' },
+  { label: 'Our Story', href: '#about' },
   { label: 'Engagement', href: '#Engagement' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -63,10 +64,10 @@ onUnmounted(() => {
         KISC
       </h1>
       <h1 class="sub-title" data-aos="fade-right" data-aos-once="true" data-aos-delay="30">
-        International School Collaboration
+        Strategic International Development for British Independent Schools
       </h1>
       <div class="sub-content-box">
-        <div class="slogan-row">
+        <!-- <div class="slogan-row">
           <h3 class="slogan" data-aos="fade-right" data-aos-once="true" data-aos-delay="60">
             A trusted bridge between UK independent schools and Asia
           </h3>
@@ -74,12 +75,9 @@ onUnmounted(() => {
           <h2 class="slogan" data-aos="fade-right" data-aos-once="true" data-aos-delay="100">
             Most schools explore international opportunities. We focus on ensuring the right ones are pursued.
           </h2>
-        </div>
+        </div> -->
         <p data-aos="fade-right" data-aos-once="true" data-aos-delay="100">
-          Meaningful and sustainable international engagement requires more than broad connections alone.
-          <br>
-          KISC supports schools in developing well-aligned partnerships, identifying appropriate opportunities, and
-          building long-term relationships across Asia, particularly within the China market.
+          KISC supports British independent schools in building long-term presence, reputation and sustainable growth across the Asia-Pacific region through clear strategy, trusted partnerships and carefully aligned international opportunities.
         </p>
       </div>
       <div class="email-btn-box">
@@ -184,7 +182,7 @@ onUnmounted(() => {
 .menu {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: clamp(14px, 2vw, 28px);
 }
 
 .menu-item {

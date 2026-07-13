@@ -8,6 +8,10 @@ defineOptions({
 <template>
   <div>
     <div class="why-title" data-aos="fade">Why KISC ?</div>
+    <p class="why-statement" data-aos="fade-up" data-aos-once="true">
+      Today, international success depends not simply on entering new markets, but on building
+      institutional value, trusted partnerships and long-term strategic clarity.
+    </p>
     <section class="why">
       <div class="why-item">
         <div class="why-item-answer">
@@ -64,6 +68,17 @@ defineOptions({
   font-weight: 100;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.why-statement {
+  max-width: 900px;
+  margin: -36px auto 72px;
+  padding: 0 24px;
+  color: #344054;
+  font-size: clamp(12px, 2vw, 20px);
+  font-weight: 300;
+  line-height: 1.55;
+  text-align: center;
 }
 
 .why {
@@ -179,6 +194,11 @@ defineOptions({
 @media (max-width: 1024px) {
   .why-title {
     padding: 80px 0 0px 0;
+  }
+  .why-statement {
+    margin: 28px auto 48px;
+    font-size: 18px;
+    text-align: left;
   }
   .why {
     height: auto;

@@ -4,12 +4,15 @@ defineOptions({
 })
 
 const schools = [
-  'UK Independent Schools',
-  'International Partnerships',
-  'Student Immersion Programmes',
+  'International Strategy',
+  'Market Positioning',
+  'Brand & Reputation Development',
+  'Strategic School Partnerships',
+  'Student Pathways',
   'Institutional Collaboration',
-  'Market Development',
-  'Long-Term Relationship Building',
+  'Cross-border Educational Projects',
+  'Programme & Intellectual Property Expansion',
+  'Strategic Development Connections',
 ]
 
 const intro = [
