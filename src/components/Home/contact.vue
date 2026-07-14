@@ -20,14 +20,31 @@ defineOptions({
               data-aos-once="true"
               data-aos-offset="-200"
             >
-              For enquiries and collaboration opportunities
+              KISC welcomes conversations with:
             </p>
+
+            <ul
+              class="contact-audience"
+              data-aos="fade-down"
+              data-aos-delay="80"
+              data-aos-once="true"
+              data-aos-offset="-200"
+            >
+              <li>Heads</li>
+              <li>Governors</li>
+              <li>Senior Leaders</li>
+              <li>Education Groups</li>
+              <li>School Owners</li>
+              <li>Institutional Partners</li>
+              <li>Developers</li>
+              <li>Strategic Partners</li>
+            </ul>
 
             <a
               class="contact-button"
               href="mailto:info@kisc.co.uk"
               data-aos="fade-down"
-              data-aos-delay="40"
+              data-aos-delay="120"
               data-aos-once="true"
               data-aos-offset="-200"
             >
@@ -113,14 +130,31 @@ defineOptions({
 
 .contact-copy {
   width: 100%;
+  max-width: 520px;
 }
 
 .contact-intro {
-  margin: 0 0 28px;
+  margin: 0 0 20px;
   color: #1f1f1f;
-  font-size: clamp(22px, 2.4vw, 34px);
+  font-size: clamp(18px, 1.8vw, 26px);
   line-height: 1.35;
   font-weight: 400;
+}
+
+.contact-audience {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 28px;
+  margin: 0 0 36px;
+  padding: 0;
+  color: #1f1f1f;
+  font-size: clamp(14px, 1.1vw, 17px);
+  line-height: 1.5;
+  list-style: none;
+
+  li {
+    padding: 2px 0;
+  }
 }
 
 .contact-button {
@@ -230,6 +264,17 @@ defineOptions({
   .contact-intro {
     margin-bottom: 22px;
     font-size: clamp(20px, 7vw, 28px);
+  }
+
+  .contact-audience {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 30px;
+    font-size: 15px;
+
+    li {
+      padding: 1px 0;
+    }
   }
 
   .contact-button {

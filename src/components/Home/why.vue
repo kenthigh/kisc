@@ -6,12 +6,14 @@ defineOptions({
 </script>
 
 <template>
-  <div>
-    <div class="why-title" data-aos="fade">Why KISC ?</div>
-    <p class="why-statement" data-aos="fade-up" data-aos-once="true">
-      Today, international success depends not simply on entering new markets, but on building
-      institutional value, trusted partnerships and long-term strategic clarity.
-    </p>
+  <div class="why-section">
+    <section class="why-intro">
+      <div class="why-title" data-aos="fade">Why KISC?</div>
+      <p class="why-statement" data-aos="fade-up" data-aos-once="true">
+        Today, international success depends not simply on entering new markets, but on building
+        institutional value, trusted partnerships and long-term strategic clarity.
+      </p>
+    </section>
     <section class="why">
       <div class="why-item">
         <div class="why-item-answer">
@@ -58,22 +60,34 @@ defineOptions({
 <style scoped>
 .why-title {
   font-size: clamp(26px, 5vw, 40px);
-  text-align: left;
   text-align: center;
-  padding: 80px;
-  background-color: #fff;
-  color: #1f1f1f;
-  /* color: #1f1f1f; */
-
+  color: #26323c;
   font-weight: 100;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
+.why-intro {
+  position: relative;
+  padding: 115px 24px 48px;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 1px;
+    height: 36px;
+    background: var(--main-color);
+    transform: translateX(-50%);
+  }
+}
+
 .why-statement {
   max-width: 900px;
-  margin: -36px auto 72px;
-  padding: 0 24px;
+  margin: 22px auto 0;
+  padding: 0;
   color: #344054;
   font-size: clamp(12px, 2vw, 20px);
   font-weight: 300;
@@ -84,6 +98,7 @@ defineOptions({
 .why {
   width: 100%;
   display: grid;
+  border-top: 0;
   /* 
     grid-template-columns: 1fr 1fr;
     表示将网格容器划分为两列，每列占据相同的空间（1fr 表示等分剩余空间）。
@@ -101,7 +116,7 @@ defineOptions({
   justify-content: center;
   text-align: center;
   border-bottom: 1px solid #e9e9e9;
-  background: #fff;
+  background: transparent;
 }
 
 /* 奇数（单数）项右侧加边框 */
@@ -113,8 +128,12 @@ defineOptions({
 /* 第3和第4项右侧加边框 */
 .why-item:nth-child(1),
 .why-item:nth-child(2) {
-  padding: 80px 24px 100px 24px;
+  padding: 48px 24px 88px;
   border-right: 1px solid #e9e9e9;
+}
+
+.why-section {
+  background: #f7f8f8;
 }
 
 .why-item > div {
@@ -192,11 +211,15 @@ defineOptions({
 }
 
 @media (max-width: 1024px) {
+  .why-intro {
+    padding: 86px 20px 34px;
+  }
+
   .why-title {
-    padding: 80px 0 0px 0;
+    padding: 0;
   }
   .why-statement {
-    margin: 28px auto 48px;
+    margin: 22px auto 0;
     font-size: 18px;
     text-align: left;
   }
@@ -212,7 +235,7 @@ defineOptions({
   /* 第3和第4项右侧加边框 */
 .why-item:nth-child(1),
 .why-item:nth-child(2) {
-  padding: 40px 24px 50px 24px;
+  padding: 34px 24px 50px;
 }
 }
 </style>

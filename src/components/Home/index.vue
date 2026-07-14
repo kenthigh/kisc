@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HomeBanner from './banner.vue'
+import Foundation from './foundation.vue'
 import Why from './why.vue'
 import Offer from './offer.vue'
 import Work from './work.vue'
@@ -19,6 +20,9 @@ defineOptions({
   <section class="main-container">
     <div id="home">
       <HomeBanner />
+    </div>
+    <div id="foundation">
+      <Foundation />
     </div>
     <div id="why">
       <Why />

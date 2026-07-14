@@ -213,7 +213,7 @@ onUnmounted(() => {
 .banner-content {
   position: relative;
   z-index: 2;
-  max-width: 90%;
+  max-width: 1200px;
   padding: 96px 48px 0;
 }
 
@@ -318,6 +318,7 @@ onUnmounted(() => {
 
   .banner-content {
     padding: 66px 20px 0;
+    max-width: 90%;
   }
 
   .banner-content p {
