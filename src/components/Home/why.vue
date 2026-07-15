@@ -7,53 +7,55 @@ defineOptions({
 
 <template>
   <div class="why-section">
-    <section class="why-intro">
-      <div class="why-title" data-aos="fade">Why KISC?</div>
-      <p class="why-statement" data-aos="fade-up" data-aos-once="true">
-        Today, international success depends not simply on entering new markets, but on building
-        institutional value, trusted partnerships and long-term strategic clarity.
-      </p>
-    </section>
-    <section class="why">
-      <div class="why-item">
-        <div class="why-item-answer">
-          <strong data-aos="fade-down" data-aos-once="true"
-            >The reality of international engagement
-          </strong>
-          <p data-aos="fade-down" data-aos-once="true">
-            Many schools take a broad approach when entering Asia, building multiple connections
-            across different markets.
-          </p>
-          <p data-aos="fade-down" data-aos-once="true">
-            While this can be valuable at an early stage, only a small number of these connections
-            develop into partnerships that are truly sustainable.
-          </p>
-          <p data-aos="fade-down" data-aos-once="true">
-            Without careful alignment, international engagement can consume significant time, effort
-            and resources without delivering meaningful outcomes.
-          </p>
+    <div class="why-shell">
+      <section class="why-intro">
+        <div class="why-title" data-aos="fade">Why KISC?</div>
+        <p class="why-statement" data-aos="fade-up" data-aos-once="true">
+          Today, international success depends not simply on entering new markets, but on building
+          institutional value, trusted partnerships and long-term strategic clarity.
+        </p>
+      </section>
+      <section class="why">
+        <div class="why-item">
+          <div class="why-item-answer">
+            <strong data-aos="fade-down" data-aos-once="true"
+              >The reality of international engagement
+            </strong>
+            <p data-aos="fade-down" data-aos-once="true">
+              Many schools take a broad approach when entering Asia, building multiple connections
+              across different markets.
+            </p>
+            <p data-aos="fade-down" data-aos-once="true">
+              While this can be valuable at an early stage, only a small number of these connections
+              develop into partnerships that are truly sustainable.
+            </p>
+            <p data-aos="fade-down" data-aos-once="true">
+              Without careful alignment, international engagement can consume significant time, effort
+              and resources without delivering meaningful outcomes.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="why-item">
-        <div class="why-item-answer">
-          <strong data-aos="fade-down" data-aos-once="true"
-            >A more focused and structured approach
-          </strong>
-          <p data-aos="fade-down" data-aos-once="true">
-            KISC supports schools in moving from initial exploration to carefully developed and
-            well-aligned engagement.
-          </p>
-          <p data-aos="fade-down" data-aos-once="true">
-            Our work is not about increasing the volume of connections, but about identifying which
-            partnerships are most likely to succeed.
-          </p>
-          <p data-aos="fade-down" data-aos-once="true">
-            We combine market understanding, practical experience, and long-term relationship
-            development to ensure that each opportunity is both appropriate and sustainable.
-          </p>
+        <div class="why-item">
+          <div class="why-item-answer">
+            <strong data-aos="fade-down" data-aos-once="true"
+              >A more focused and structured approach
+            </strong>
+            <p data-aos="fade-down" data-aos-once="true">
+              KISC supports schools in moving from initial exploration to carefully developed and
+              well-aligned engagement.
+            </p>
+            <p data-aos="fade-down" data-aos-once="true">
+              Our work is not about increasing the volume of connections, but about identifying which
+              partnerships are most likely to succeed.
+            </p>
+            <p data-aos="fade-down" data-aos-once="true">
+              We combine market understanding, practical experience, and long-term relationship
+              development to ensure that each opportunity is both appropriate and sustainable.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
 </template>
 
@@ -69,7 +71,7 @@ defineOptions({
 
 .why-intro {
   position: relative;
-  padding: 115px 24px 48px;
+  padding: 115px 0 48px;
   text-align: center;
 
   &::before {
@@ -115,7 +117,6 @@ defineOptions({
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-bottom: 1px solid #e9e9e9;
   background: transparent;
 }
 
@@ -126,19 +127,30 @@ defineOptions({
 } */
 
 /* 第3和第4项右侧加边框 */
-.why-item:nth-child(1),
+.why-item:nth-child(1){
+  padding: 48px 150px 88px 10px;
+}
 .why-item:nth-child(2) {
-  padding: 48px 24px 88px;
+  padding: 48px 10px 88px 130px;
+}
+
+.why-item:nth-child(1) {
   border-right: 1px solid #e9e9e9;
 }
 
 .why-section {
   background: #f7f8f8;
+  padding: 0 32px;
+}
+
+.why-shell {
+  width: min(1240px, 100%);
+  margin: 0 auto;
 }
 
 .why-item > div {
   margin: 0;
-  width: 400px;
+  width: min(520px, 100%);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.45;
@@ -151,7 +163,10 @@ defineOptions({
   }
   &.why-item-answer {
     p {
+      margin-top: 0;
       margin-bottom: 20px;
+      text-align: justify;
+      text-align-last: left;
     }
     strong {
       position: relative;
@@ -211,8 +226,12 @@ defineOptions({
 }
 
 @media (max-width: 1024px) {
+  .why-section {
+    padding: 0 24px;
+  }
+
   .why-intro {
-    padding: 86px 20px 34px;
+    padding: 86px 0 34px;
   }
 
   .why-title {
@@ -230,12 +249,29 @@ defineOptions({
     grid-template-rows: repeat(2, minmax(180px, 1fr));
   }
   .why-item > div {
-    width: 86%;
+    width: min(520px, 100%);
   }
   /* 第3和第4项右侧加边框 */
 .why-item:nth-child(1),
 .why-item:nth-child(2) {
   padding: 34px 24px 50px;
 }
+
+  .why-item:nth-child(1) {
+    border-right: 0;
+    border-bottom: 1px solid #e9e9e9;
+  }
+}
+
+@media (max-width: 820px) {
+  .why-section {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-section {
+    padding: 0 16px;
+  }
 }
 </style>
