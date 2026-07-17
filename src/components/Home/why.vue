@@ -165,7 +165,7 @@ defineOptions({
     p {
       margin-top: 0;
       margin-bottom: 20px;
-      text-align: justify;
+      text-align: left;
       text-align-last: left;
     }
     strong {
